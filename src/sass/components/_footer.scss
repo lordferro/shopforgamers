@@ -6,6 +6,7 @@
         margin: 0 auto;
     }
     @media screen and (min-width:768px) {
+        display: flex;
         max-width: 100%;
         padding: 40px 51px 40px 40px;
         margin: 0 auto;
@@ -21,9 +22,18 @@
     } 
 }
 
-.is-hidden {
+.contant-flex {
     @media screen and (min-width:379.98px),
     (max-width:480px) {
+        display: block;
+    }
+    @media screen and (min-width:768px) {
+        display: flex;
+    } 
+}
+
+.is-hidden {
+    @media screen and (min-width:768px) {
         display: none;
     }
     
@@ -32,12 +42,15 @@
 .vis {
     @media screen and (min-width:379.98px),
     (max-width:480px) {
-        display: inherit;
+        display: none;
     }
+    @media screen and (min-width:768px) {
+        display: block;
+    } 
 }
 
 .footer {
-    min-width: 320px;
+    max-width: 100%;
     background: #001414;
 }
 
@@ -55,16 +68,35 @@
     display: flex;
 }
 
-.padding-logo {
-    padding: 25px 0px 0px 0px;
+.margin-logo {
+    margin: 25px 0px 0px 0px;
+    
 }
 
 .footer__links {
-    margin: 25px 0px 24px 0px;
+    @media screen and (min-width:379.98px),
+    (max-width:480px) {
+        margin: 25px 0px 24px 0px;
+    }
+    @media screen and (min-width:768px) {
+        margin: 0;
+        margin-left: 61px;
+    } 
 }
 
 .link-margin {
     margin-top: 16px;
+}
+
+.contacts-margin {
+    
+    @media screen and (min-width:379.98px),
+    (max-width:480px) {
+        margin: 0;
+    }
+    @media screen and (min-width:768px) {
+        margin-left: 61px;
+    } 
 }
 
 .link-margin:first-child {
@@ -118,11 +150,20 @@
 }
 
 .section-icon {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-    margin-left: 100px;
-    margin-top: 25px;
+    @media screen and (min-width:379.98px),
+    (max-width:480px) {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        margin-left: 100px;
+        margin-top: 25px;
+    }
+    @media screen and (min-width:768px) {
+        flex-direction: row;
+        margin-left: 89px;
+        margin-top: 0;
+    } 
+    
 }
 
 .section_svg {
