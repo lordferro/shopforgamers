@@ -18,7 +18,7 @@
 
 .footer__logo {
     font-weight: 700;
-    max-width: 118px;
+    max-width: 116px;
     font-size: 24px;
     line-height: calc(28 / 24);
     text-align: center;
@@ -31,7 +31,7 @@
 }
 
 .padding-logo {
-    padding: 25px 0px 0px 16px;
+    padding: 25px 0px 0px 0px;
 }
 
 .footer__links {
@@ -97,7 +97,7 @@
     flex-direction: column;
     gap: 32px;
     margin-left: 100px;
-    margin-top: 106px;
+    margin-top: 25px;
 }
 
 .section_svg {
