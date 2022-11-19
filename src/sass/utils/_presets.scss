@@ -6,6 +6,10 @@ p {
   margin-bottom: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -28,10 +32,18 @@ body {
 
 // }
 
-.list {
-  list-style: none;
-  margin: 0;
+ul {
   padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+  padding: 0px;
+}
+
+address {
+  font-style: normal;
 }
 
 // .title {
