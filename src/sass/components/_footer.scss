@@ -1,0 +1,106 @@
+.container {
+
+    @media screen and (min-width:319.98px),
+    (max-width:320px) {
+        max-width: 100%;
+        padding: 25px 32px 24px 16px;
+    }
+}
+
+.container-flex {
+    display: flex;
+}
+
+.footer {
+    min-width: 320px;
+    background: #001414;
+}
+
+.footer__logo {
+    font-weight: 700;
+    max-width: 118px;
+    font-size: 24px;
+    line-height: calc(28 / 24);
+    text-align: center;
+
+    color: #ffffff;
+}
+
+.logo {
+    display: flex;
+}
+
+.padding-logo {
+    padding: 25px 0px 0px 16px;
+}
+
+.footer__links {
+    margin: 25px 0px 24px 0px;
+}
+
+.link-margin {
+    margin-top: 16px;
+}
+
+.link-margin:first-child {
+    margin-top: 0px;
+}
+
+.link-item {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    color: #ffffff;
+}
+
+.footer-list {}
+
+.contact-mail__list {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(18.75 / 16);
+
+    color: #ffffff;
+}
+
+.contact-tel__list {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(18.75 / 16);
+    margin-top: 16px;
+
+    color: #ffffff;
+}
+
+.contact-mail__item {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(18.75 / 16);
+
+    color: #8D9289;
+}
+
+.contact-tel__item {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(18.75 / 16);
+
+    color: #8D9289;
+}
+
+.contact-margin {
+    margin-top: 8px;
+}
+
+.section-icon {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-left: 100px;
+    margin-top: 106px;
+}
+
+.section_svg {
+    width: 24px;
+    height: 24px;
+}
