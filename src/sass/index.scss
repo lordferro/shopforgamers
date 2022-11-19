@@ -1,2 +1,16 @@
-@import './common';
-@import './example';
+@import './utils/common';
+@import './utils/breakpoints';
+@import './utils/variables';
+@import './utils/presets';
+
+@import './components/header';
+@import './components/hero';
+@import './components/modal';
+@import './components/slider';
+@import './components/sale';
+@import './components/accessories';
+@import './components/take_order';
+@import './components/contacts';
+@import './components/blog';
+@import './components/blog_article';
+@import './components/footer';

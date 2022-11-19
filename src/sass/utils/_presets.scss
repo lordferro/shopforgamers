@@ -1,0 +1,76 @@
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;  
+}
+
+body {
+  
+  font-family: Roboto, sans-serif;
+}
+
+// body.modal-open {
+//   overflow: hidden;
+// }
+
+.section {
+  //  padding-top: ;
+  //  padding-bottom: ;
+
+
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.button {
+
+}
+
+.title {
+  // color: $title-color;
+}
+
+.container {  
+  margin-left: auto;
+  margin-right: auto;
+  // padding-left: ;
+  // padding-right: ;
+  width: 100vw;
+  min-width: 320px;
+
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
+  }
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+  }
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
