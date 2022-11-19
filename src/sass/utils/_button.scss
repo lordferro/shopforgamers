@@ -1,0 +1,187 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: transparent;
+  border-radius: 16px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+}
+.button-header {
+  width: 102px;
+  height: 46px;
+
+  background-color: $accent-color;
+  padding: 16px 20px;
+
+  font-size: 14px;
+  line-height: 1;
+  color: black;
+  &:hover {
+    box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.5),
+      0px 4px 10px rgba(255, 255, 255, 0.1);
+  }
+}
+
+.button-shopping {
+  width: 306px;
+  height: 70px;
+
+  background-color: $accent-color;
+
+  font-size: 32px;
+  line-height: 38px;
+  text-transform: uppercase;
+
+  color: #01383a;
+  &:hover {
+    box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.5),
+      0px 4px 10px rgba(255, 255, 255, 0.1);
+  }
+}
+
+.button-view {
+  padding: 16px 48px;
+  width: 195px;
+  height: 65px;
+  background-color: #ffffff;
+
+  font-size: 28px;
+  line-height: 1.17;
+  color: #01383a;
+
+  &:hover {
+    box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.5),
+      0px 4px 10px rgba(134, 229, 67, 0.1);
+  }
+}
+
+.button-buy {
+  padding: 16px 20px;
+  width: 306px;
+  height: 70px;
+  background: $accent-color;
+
+  font-size: 32px;
+  line-height: 1.1875;
+  text-transform: uppercase;
+
+  color: #01383a;
+  &:hover {
+    box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.5),
+      0px 4px 10px rgba(255, 255, 255, 0.1);
+  }
+}
+
+.button-add {
+  padding: 16px 20px;
+  width: 306px;
+  height: 70px;
+  border: 1px solid $accent-color;
+
+  font-size: 32px;
+  line-height: 1.1875;
+  text-transform: uppercase;
+
+  color: $accent-color;
+  &:hover {
+    filter: drop-shadow(0px 4px 10px rgba(134, 229, 67, 0.1))
+      drop-shadow(0px 4px 20px rgba(134, 229, 67, 0.4));
+  }
+}
+
+.button-send {
+  padding: 16px 20px;
+
+  width: 306px;
+  height: 70px;
+  border: 1px solid #ffffff;
+
+  font-size: 32px;
+  line-height: 1.1875;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  &:hover {
+    filter: drop-shadow(0px 4px 10px rgba(255, 255, 255, 0.1))
+      drop-shadow(0px 4px 20px rgba(255, 255, 255, 0.4));
+  }
+}
+
+.button-filter {
+  width: 168px;
+  height: 51px;
+  padding: 16px 48px;
+  border: 1px solid $accent-color;
+  filter: drop-shadow(0px 4px 4px rgba(134, 229, 67, 0.2));
+
+  font-size: 16px;
+  line-height: 1.1875;
+
+  color: $accent-color;
+
+  &:hover {
+    filter: drop-shadow(0px 4px 10px rgba(134, 229, 67, 0.1))
+      drop-shadow(0px 4px 20px rgba(134, 229, 67, 0.4));
+  }
+  &:active {
+    background: $accent-color;
+    color: #01383a;
+    box-shadow: 0px 4px 10px rgba(134, 229, 67, 0.1),
+      0px 4px 20px rgba(134, 229, 67, 0.4);
+  }
+}
+
+.button-menu {
+  width: max-content;
+  padding-bottom: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  border-radius: 0;
+  color: #ffffff;
+  border-bottom: 1px solid transparent;
+
+  &:hover {
+    border-bottom: 1px solid $accent-color;
+  }
+}
+
+.button-like {
+  padding: 16px;
+  gap: 8px;
+  width: 171px;
+  height: 80px;
+  background-color: $accent-color;
+
+  font-size: 32px;
+  line-height: 1.1875;
+  text-transform: uppercase;
+  color: #01383a;
+
+  &:active {
+    box-shadow: 0px 4px 10px rgba(134, 229, 67, 0.1),
+      0px 4px 20px rgba(134, 229, 67, 0.4);
+  }
+}
+
+.button-dislike {
+  padding: 16px;
+  gap: 8px;
+  width: 171px;
+  height: 80px;
+  border: 1px solid $accent-color;
+
+  font-size: 32px;
+  line-height: 1.1875;
+  text-transform: uppercase;
+  color: $accent-color;
+  &:active {
+    filter: drop-shadow(0px 4px 10px rgba(134, 229, 67, 0.1))
+      drop-shadow(0px 4px 20px rgba(134, 229, 67, 0.4));
+  }
+}
