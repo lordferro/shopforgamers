@@ -1,11 +1,15 @@
 .container {
-
     @media screen and (min-width:379.98px),
     (max-width:480px) {
         max-width: 100%;
         padding: 25px 32px 24px 16px;
-        margin: 0;
+        margin: 0 auto;
     }
+    @media screen and (min-width:768px) {
+        max-width: 100%;
+        padding: 40px 51px 40px 40px;
+        margin: 0 auto;
+    } 
 }
 
 .container-flex {
@@ -14,8 +18,22 @@
         display: flex;
     }
     @media screen and (min-width:768px) {
-        display: block;
     } 
+}
+
+.is-hidden {
+    @media screen and (min-width:379.98px),
+    (max-width:480px) {
+        display: none;
+    }
+    
+}
+
+.vis {
+    @media screen and (min-width:379.98px),
+    (max-width:480px) {
+        display: inherit;
+    }
 }
 
 .footer {
