@@ -10,7 +10,7 @@
   font-style: normal;
   font-weight: 700;
 }
-.button-header {
+.button__header {
   width: 102px;
   height: 46px;
 
@@ -26,14 +26,14 @@
   }
 }
 
-.button-shopping {
+.button__green {
   width: 306px;
   height: 70px;
 
   background-color: $accent-color;
 
   font-size: 32px;
-  line-height: 38px;
+  line-height: 1.1875;
   text-transform: uppercase;
 
   color: #01383a;
@@ -43,7 +43,7 @@
   }
 }
 
-.button-view {
+.button__white{
   padding: 16px 48px;
   width: 195px;
   height: 65px;
@@ -59,24 +59,7 @@
   }
 }
 
-.button-buy {
-  padding: 16px 20px;
-  width: 306px;
-  height: 70px;
-  background: $accent-color;
-
-  font-size: 32px;
-  line-height: 1.1875;
-  text-transform: uppercase;
-
-  color: #01383a;
-  &:hover {
-    box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.5),
-      0px 4px 10px rgba(255, 255, 255, 0.1);
-  }
-}
-
-.button-add {
+.button__green-transparent {
   padding: 16px 20px;
   width: 306px;
   height: 70px;
@@ -93,7 +76,7 @@
   }
 }
 
-.button-send {
+.button__white-transparent {
   padding: 16px 20px;
 
   width: 306px;
@@ -111,7 +94,7 @@
   }
 }
 
-.button-filter {
+.button__filter {
   width: 168px;
   height: 51px;
   padding: 16px 48px;
@@ -135,7 +118,7 @@
   }
 }
 
-.button-menu {
+.button__menu {
   width: max-content;
   padding-bottom: 8px;
   font-weight: 500;
@@ -151,7 +134,7 @@
   }
 }
 
-.button-like {
+.button__like {
   padding: 16px;
   gap: 8px;
   width: 171px;
@@ -169,7 +152,7 @@
   }
 }
 
-.button-dislike {
+.button__dislike {
   padding: 16px;
   gap: 8px;
   width: 171px;
@@ -185,3 +168,4 @@
       drop-shadow(0px 4px 20px rgba(134, 229, 67, 0.4));
   }
 }
+
