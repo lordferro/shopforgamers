@@ -1,7 +1,9 @@
 .order {
     background-color: $header-background-color;
     position: relative;
+        background-image: url(../images/mobile_background.jpg) no-repeat center cover;
   }
+   
   .form__title {
     text-transform: uppercase;
     color: #86e543;
@@ -67,8 +69,7 @@
     color: #ffffff;
   }
   textarea {
-    margin-left: auto;
-    margin-right: auto;
+    
     padding-top: 12px;
     padding-left: 16px;
     padding-right: 16px;
