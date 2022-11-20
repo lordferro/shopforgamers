@@ -36,6 +36,14 @@
   line-height: 38px;
   text-transform: uppercase;
 
+  @media screen and (max-width:767px){
+  width: 173px;
+  height: 51px;
+
+  font-size: 16px;
+  line-height: 1.1875;
+  }
+
   color: #01383a;
   &:hover {
     box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.5),
@@ -69,6 +77,17 @@
   line-height: 1.1875;
   text-transform: uppercase;
 
+  @media screen and (max-width:767px){
+  width: 173px;
+  height: 51px;
+
+  background-color: $accent-color;
+
+  font-size: 16px;
+  line-height: 1.1875;
+  text-transform: uppercase;
+  }
+
   color: #01383a;
   &:hover {
     box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.5),
@@ -85,6 +104,17 @@
   font-size: 32px;
   line-height: 1.1875;
   text-transform: uppercase;
+
+  @media screen and (max-width:767px){
+  width: 173px;
+  height: 51px;
+
+  background-color: $accent-color;
+
+  font-size: 16px;
+  line-height: 1.1875;
+  text-transform: uppercase;
+  }
 
   color: $accent-color;
   &:hover {
@@ -105,6 +135,17 @@
   text-transform: uppercase;
   color: #ffffff;
 
+  @media screen and (max-width:767px){
+  width: 173px;
+  height: 51px;
+
+  background-color: $accent-color;
+
+  font-size: 16px;
+  line-height: 1.1875;
+  text-transform: uppercase;
+  }
+
   &:hover {
     filter: drop-shadow(0px 4px 10px rgba(255, 255, 255, 0.1))
       drop-shadow(0px 4px 20px rgba(255, 255, 255, 0.4));
@@ -120,6 +161,16 @@
 
   font-size: 16px;
   line-height: 1.1875;
+
+  @media screen and (max-width:767px){
+  width: 132px;
+  height: 51px;
+  padding: 16px 24px;
+
+  font-size: 16px;
+  line-height: 1.1875;
+  
+  }
 
   color: $accent-color;
 
@@ -138,13 +189,24 @@
 .button-menu {
   width: max-content;
   padding-bottom: 8px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.16;
   letter-spacing: 0.02em;
   border-radius: 0;
   color: #ffffff;
   border-bottom: 1px solid transparent;
+
+  @media screen and (min-width:768px){
+  font-size: 32px;
+  line-height: 1.1875; 
+  }
+
+  @media screen and (min-width:1280px){
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  }
 
   &:hover {
     border-bottom: 1px solid $accent-color;
