@@ -1,0 +1,266 @@
+.blog{
+    max-width: 480px;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 48px;
+    padding-left: 16px;
+  padding-right: 16px;
+    
+    
+   
+    background-image: url(../images/vasilenko/mob-bg@1x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left top;
+    @media (min-device-pixel-ratio: 2),
+           (min-resolution: 192dpi),
+           (min-resolution: 2dppx){
+           background-image: url(../images/vasilenko/mob-bg@2x.jpg); 
+        }
+
+   @media screen and (min-width: 768px){
+    max-width: 768px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    padding-left: 40px;
+    padding-right: 40px;
+      background-image: url(../images/vasilenko/tab-bg@1x.jpg);
+
+        @media (min-device-pixel-ratio: 2),
+               (min-resolution: 192dpi),
+               (min-resolution: 2dppx) {
+               background-image: url(../images/vasilenko/tab-bg@2x.jpg);
+        }
+   }
+   @media screen and (min-width: 1280px){
+    max-width: 1200px;
+      background-image: url(../images/vasilenko/desc-bg@1x.jpg);
+       
+        @media (min-device-pixel-ratio: 2),
+               (min-resolution: 192dpi),
+               (min-resolution: 2dppx) {
+               background-image: url(../images/vasilenko/desc-bg@2x.jpg);
+        }
+   }
+   
+}
+
+.blog__container{
+ max-width: 480px;
+ 
+
+ @media screen and (min-width: 768px){
+  max-width: 768px;
+}
+ @media screen and (min-width: 1280px){
+  max-width: 1200px;
+    
+ }
+}
+
+
+.blog__item{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 40px;
+    }
+ }
+
+ .blog__item--desk{
+  
+  max-width: 480px;
+  position: relative;
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+  
+     @media screen and (min-width: 1280px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;;
+    max-width: 693px;
+    height: 364px;
+    margin-left: 508px;
+  }
+ }
+
+
+.section__title{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.16;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+
+     
+
+    @media screen and (min-width: 768px) {
+      font-weight: 500;
+      font-size: 56px;
+      line-height: 1.17;
+      margin-left: 59px;
+      margin-bottom: 67px;
+    }
+
+    @media screen and (min-width: 1280px) {
+       margin-left: 102px;
+       margin-bottom: 75px;
+    }
+    
+}
+
+.blog__title{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.16;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+    
+    @media screen and (min-width: 768px) {
+      font-weight: 500;
+      font-size: 56px;
+      line-height: 1;
+    }
+
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 0;
+    }
+    
+}
+
+.blog__image--mobile{
+  width: calc(100% + 32px);
+
+  @media screen and (min-width: 768px) {
+    width: 387px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 0;
+    
+  }
+}
+
+.blog_cover{
+    position: relative;
+    right: 16px;
+    margin-bottom: 8px;
+    width: calc(100vw + 32px);
+    
+   
+    @media screen and (min-width: 768px) {
+      max-width: 387px;
+      border-radius: 12px;
+      right: 0;
+    }
+
+    @media screen and (min-width: 1280px) {
+      position: absolute;
+      top: 0;
+      right: calc(100% + 120px);
+    }
+}
+
+.blog__info{
+  
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: flex-end;
+
+  &--text{
+    margin-left: 40px;
+  }
+  }
+ }
+
+  .blog__info--text{
+   
+    @media screen and (min-width: 1280px){
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    margin-left: 0;
+   
+    
+    
+  }
+}
+
+.blog__author{
+    margin-bottom: 8px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1;
+    color: #FFFFFF;
+
+    @media screen and (min-width: 768px) {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 1;
+      margin-bottom: 32px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      margin-right: 96px;
+      margin-bottom: 0;
+    }
+
+  
+}
+
+.blog__update{
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1;
+    color: #8D9289;
+
+    @media screen and (min-width: 768px) {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 1;
+    }
+
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 0;
+    }
+  
+}
+
+.blog__content{
+    text-align: left;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    color: #FFFFFF;
+
+    @media screen and (min-width: 768px) {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 1.16;
+    }
+
+      
+  }
+
+.blog__link{
+    margin-left: auto;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1;
+    color: $accent-color;
+    @media screen and (min-width: 1280px) {
+      font-size: 24px;
+      line-height: 1;
+    }
+  
+    &--desk{
+       display: flex;
+       align-items: flex-end;
+     
+}
+}
