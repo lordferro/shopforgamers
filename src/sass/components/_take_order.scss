@@ -1,102 +1,179 @@
 .order {
-    background-color: $header-background-color;
-    position: relative;
-        background-image: url(../images/mobile_background.jpg) no-repeat center cover;
+  background-color: $header-background-color;
+  position: relative;
+}
+@media screen and (max-width: $tablet) {
+  .order {
+    background-image: url(../images/background/mobile/frame_mobile.jpg);
   }
-   
-  .form__title {
-    text-transform: uppercase;
-    color: #86e543;
-    font-weight: 500;
-    font-size: 36px;
-    line-height: 1.17;
+}
+@media screen and (max-width: $tablet) and (min-device-pixel-ratio: 2),
+  screen and (max-width: $tablet) and (min-resolution: 192dpi),
+  screen and (max-width: $tablet) and (min-resolution: 2dppx) {
+  .order {
+    background-image: url(../images/background/mobile/frame_mobile_2x.jpg);
   }
-  .form__field {
-    width: 100%;
-    margin-bottom: 36px;
+}
+@media screen and (min-width: $tablet) and (max-width: 1199px) {
+  .order {
+    background-image: url(../images/background/tablet/frame_tablet.jpg);
   }
-  .hiddens {
-    display: none;
-    
+}
+@media screen and (min-width: $tablet) and (max-width: 1199px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: $tablet) and (max-width: 1199px) and (min-resolution: 192dpi),
+  screen and (min-width: $tablet) and (max-width: 1199px) and (min-resolution: 2dppx) {
+  .order {
+    background-image: url(../images/background/tablet/frame_tablet_2x.jpg);
   }
-  .form__field input {
-    padding-bottom: 4px;
-    background: transparent;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid #86e543;
-    background-color: #01383a;
-    font-weight: 400;
-  font-size: 18px;
-  line-height: 20px;
+}
+@media screen and (min-width: $desktop) {
+  .order {
+    background-image: url(../images/background/desktop/frame_desktop.jpg);
+  }
+}
+@media screen and (min-width: 1199px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 1199px) and (min-resolution: 192dpi),
+  screen and (min-width: 1199px) and (min-resolution: 2dppx) {
+  .order {
+    background-image: url(../images/background/desktop/frame_desktop_2x.jpg);
+  }
+}
+.order__title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  color: #ffffff;
+  padding-top: 40px;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 56px;
+    line-height: 1.18;
+    padding-top: 120px;
+  }
+}
+.form__title {
+  text-transform: uppercase;
+  color: #86e543;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 1.17;
+  margin-bottom: 12px;
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 44px;
+  }
+}
+.form__field {
+  width: 100%;
+  margin-bottom: 36px;
+}
+.hiddens {
+  display: none;
+}
+.form__field input {
+  padding-bottom: 4px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #86e543;
+  background-color: #01383a;
   max-width: 582px;
-  
-    &:hover,
-    &:focus {
-      border: 1px solid #86e543;
-    }
-  }
-  .form__field input::placeholder {
-    display: flex;
-    align-items: left;
-    justify-content: flex-start;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.11;
-    color: #ffffff;
-  }
-  
-  .form__input {
-    
-    background-color: #01383a;
-    height: 28px;
-    min-width: 288px;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.11;
-    color: #ffffff;
-    outline: transparent;
-    outline: none;
+
+  &:hover,
+  &:focus {
     border-bottom: 1px solid #86e543;
-      }
-  
-  .form__name {
-    
-    margin-bottom: 4px;
-    font-weight: 400;
+    box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.5),
+      0px 4px 10px rgba(255, 255, 255, 0.1);
+  }
+}
+.form__field input::placeholder {
+  display: flex;
+  align-items: left;
+  justify-content: flex-start;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #ffffff;
+  @media screen and (min-width: $tablet) {
     font-size: 18px;
     line-height: 1.11;
-    color: #ffffff;
   }
-  textarea {
-    
-    padding-top: 12px;
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-bottom: 12px;
-    resize: none;
-    min-width: 287px;
-    min-height: 95px;
-    border: 1px solid #86e543;
-    cursor: pointer;
-    background-color: $header-background-color;
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
-    &:hover,
-    &:focus {
-      border: 1px solid #86e543;
-    }
-  
+}
+
+.form__input {
+  background-color: #01383a;
+  height: 28px;
+  min-width: 288px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #ffffff;
+  outline: transparent;
+  outline: none;
+  border-bottom: 1px solid #86e543;
+
+  &:hover,
+  &:focus {
+    border-bottom: 1px solid #86e543;
+    box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.5),
+      0px 4px 10px rgba(255, 255, 255, 0.1);
   }
-  
-  textarea:focus {
-    outline: transparent;
+
+  @media screen and (min-width: $tablet) {
+    width: 590px;
+    font-size: 18px;
+    line-height: 1.11;
   }
-  
-  .button {
-    // position: relative;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+}
+
+.form__name {
+  margin-bottom: 4px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.11;
+  color: #ffffff;
+}
+textarea {
+  padding-top: 12px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 12px;
+  resize: none;
+  min-width: 287px;
+  height: 95px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #ffffff;
+  border: 1px solid #86e543;
+  cursor: pointer;
+  background-color: $header-background-color;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.5),
+      0px 4px 10px rgba(255, 255, 255, 0.1);
   }
+
+  @media screen and (min-width: $tablet) {
+    width: 589px;
+    height: 256px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 589px;
+    height: 256px;
+  }
+}
+
+textarea:focus {
+  outline: transparent;
+}
+
+.button {
+  // position: relative;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
