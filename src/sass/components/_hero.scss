@@ -109,14 +109,15 @@
     @media screen and (min-width: 1280px) {
       
         background-image: url(../images/gladkovich/fon-hero.png),                                               
-                          url(../images/gladkovich/img1-desk.png),
-                          url(../images/gladkovich/img2-desk.png),
-                          url(../images/gladkovich/img3-desk.png);
+                        luminosity url(../images/gladkovich/img1-desk.png),
+                        luminosity url(../images/gladkovich/img2-desk-test.png),
+                        luminosity url(../images/gladkovich/img3-desk.png);
                           
 
         background-repeat: no-repeat;
         background-size: cover, 200px, 350px, 270px;
         background-position: top -130px left 50%, top 75px left 630px, top 155px right 110px, bottom 100px left 600px;
+        
 
         padding-top: 180px;
         padding-bottom: 209px;
