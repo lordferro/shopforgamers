@@ -24,15 +24,8 @@
   }
 }
 
-
-
 .sale__text {
   position: absolute;
-  // background-image: url(/src/images/sale/sale_line_top_mob.svg),
-  //   url(/src/images/sale/sale_line_bottom_mob.svg);
-  background-repeat: no-repeat;
-  // background-position: top 2px left 0px, top 8px left 0px;
-  background-size: cover;
   width: 100%;
   height: 63px;
   left: 0;
@@ -40,11 +33,11 @@
 }
 
 .sale__title {
-  margin-left: 80px;
+  margin-left: 62px;
   color: #ffffff;
   font-weight: 500;
   font-size: 24px;
-  line-height: 1.17;
+  line-height: calc(28px / 24px);
 
   @media screen and (min-width: 768px) {
     margin-left: 142px;
@@ -221,5 +214,43 @@
 .sale__buton{
   display: flex;
   justify-content: center;
+}
+
+.line {
+  @media screen and (max-width: 480px) {
+    margin-bottom: 24px;
+    .line__mob,
+    .line__tab,
+    .line__desk {
+      display: none;
+    }
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 768px) {
+    // margin-bottom: 24px;
+    .line__tab,
+    .line__desk,
+    .line__320 {
+      display: none;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1280px) {
+    // margin-bottom: 24px;
+    .line__mob,
+    .line__desk,
+    .line__320 {
+      display: none;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    // margin-bottom: 16px;
+    .line__mob,
+    .line__tab,
+    .line__320 {
+      display: none;
+    }
+  }
 }
 
