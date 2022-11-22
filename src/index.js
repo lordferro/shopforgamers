@@ -1,1 +1,1 @@
-import './contacts-modal.js';
+import './contacts-modal';
