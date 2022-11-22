@@ -3,17 +3,17 @@
   margin: 0 auto;
   padding: 0 16px;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 479.9px) {
     width: 480px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 767.9px) {
     width: 768px;
     padding-right: 40px;
     padding-left: 40px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1279.9px) {
     width: 1280px;
   }
 }
@@ -141,8 +141,8 @@
   }
 
   // &:after {
-  //   background-image: url(/src/images/kruglyak/sale_line_top_mob.svg),
-  //     url(/src/images/kruglyak/sale_line_bottom_mob.svg);
+  //   background-image: url(/src/images/accessories/sale_line_top_mob.svg),
+  //     url(/src/images/accessories/sale_line_bottom_mob.svg);
   //   background-repeat: no-repeat;
   //   // background-position: top 2px left 0px, top 8px left 0px;
   //   background-size: cover;
@@ -152,8 +152,8 @@
 }
 
 // .line {
-//   background-image: url(./images/kruglyak/sale_line_top_mob.svg),
-//     url(./images/kruglyak/sale_line_bottom_mob.svg), url(../components/);
+//   background-image: url(./images/accessories/sale_line_top_mob.svg),
+//     url(./images/accessories/sale_line_bottom_mob.svg), url(../components/);
 //   background-repeat: no-repeat;
 //   background-position: top 2px left 0px, top 8px left 0px;
 //   background-size: cover;
@@ -274,8 +274,8 @@
 }
 
 .cover-container {
-  max-width: 285;
-  height: 276;
+  max-width: 285px;
+  height: 276px;
   border: 1px solid #86e543;
   box-shadow: 0px 4px 4px rgba(134, 229, 67, 0.2);
   border-radius: 12px;
