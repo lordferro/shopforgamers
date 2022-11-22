@@ -43,14 +43,25 @@
 .sale__title {
   margin-left: 80px;
   color: #ffffff;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 24px;
   line-height: 1.17;
+
+  @media screen and (min-width: 768px) {
+    margin-left: 142px;
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 1.17;
+  }
 }
 
 .sale__cards {
-  padding-top: 64px;
+  padding-top: 63px;
   display: flex;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 117px;
+  }
 }
 
 .sale__list {
@@ -188,7 +199,6 @@
 }
 
 .sale-old-price {
-  margin-left: 8px;
   font-weight: 600;
   font-size: 14px;
   line-height: 1;
@@ -197,7 +207,6 @@
 }
 
 .sale-new-price {
-  margin-right: 8px;
   font-weight: 600;
   font-size: 20px;
   line-height: 100%;
