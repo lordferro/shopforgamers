@@ -1,12 +1,17 @@
 .sale {
-  max-width: 768px;
+  max-width: 480px;
   background-repeat: no-repeat;
   background-position: center;
-  margin-left: auto;
-  margin-right: auto;
+  // margin-left: auto;
+  // margin-right: auto;
   background-color: #043835;
-  // width: 480px;
-  @media screen and (min-width: 1280px) {
+  padding: 0px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+
+  @media screen and (max-width: 1280px) {
     max-width: 1280px;
   }
 }
@@ -29,10 +34,10 @@
 
 .sale__text {
   position: absolute;
-  background-image: url(/src/images/sale/sale_line_top_mob.svg),
-    url(/src/images/sale/sale_line_bottom_mob.svg);
+  // background-image: url(/src/images/sale/sale_line_top_mob.svg),
+  //   url(/src/images/sale/sale_line_bottom_mob.svg);
   background-repeat: no-repeat;
-  background-position: top 2px left 0px, top 8px left 0px;
+  // background-position: top 2px left 0px, top 8px left 0px;
   background-size: cover;
   width: 100%;
   height: 63px;
