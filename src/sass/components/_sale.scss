@@ -1,24 +1,13 @@
 .sale {
-  max-width: 480px;
   background-repeat: no-repeat;
   background-position: center;
-  // margin-left: auto;
-  // margin-right: auto;
   background-color: #043835;
   padding: 0px;
-
-  @media screen and (min-width: 768px) {
-    max-width: 768px;
-  }
-
-  @media screen and (max-width: 1280px) {
-    max-width: 1280px;
-  }
 }
 
 .sale__container {
-  width: 320px;
   position: relative;
+  width: 320px;
   padding-left: 18px;
   padding-right: 18px;
 
