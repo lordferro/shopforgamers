@@ -148,8 +148,7 @@
   -webkit-appearance: none;
   appearance: none;
   border: none;
-  background-color: transparent;
-  
+  background: url('../images/icon_down.svg') no-repeat right;  
   background-color: #01383a;
   height: 28px;
   min-width: 288px;
@@ -162,7 +161,7 @@
   outline: transparent;
   outline: none;
   border-bottom: 1px solid #86e543;
-
+ 
   &:hover,
   &:focus {
     border-bottom: 1px solid #86e543;
