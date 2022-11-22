@@ -51,7 +51,7 @@ backdrop.is-hidden {
     margin-right: auto;
   }
 }
-.modal__title {
+.contacts-modal__title {
   margin-top: 60px;
   margin-bottom: 32px;
   font-weight: 500;
@@ -77,7 +77,7 @@ backdrop.is-hidden {
 .contacts-button {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.close-btn {
+.contacts-close__btn {
   position: absolute;
   top: 24px;
   right: 24px;
@@ -99,7 +99,7 @@ backdrop.is-hidden {
   }
 }
 
-.close-btn__icon {
+.contacts-close__btn--icon {
   .close-btn:hover &,
   .close-btn:focus & {
     &:hover {
