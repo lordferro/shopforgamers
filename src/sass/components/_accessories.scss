@@ -3,17 +3,17 @@
   margin: 0 auto;
   padding: 0 16px;
 
-  @media screen and (min-width: 479.9px) {
+  @media screen and (min-width: 480px) {
     width: 480px;
   }
 
-  @media screen and (min-width: 767.9px) {
+  @media screen and (min-width: 768px) {
     width: 768px;
     padding-right: 40px;
     padding-left: 40px;
   }
 
-  @media screen and (min-width: 1279.9px) {
+  @media screen and (min-width: 1280px) {
     width: 1280px;
   }
 }
@@ -62,7 +62,7 @@
 .buttons {
   margin: 0 auto;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767.9px) {
     width: 272px;
   }
 }
@@ -75,18 +75,17 @@
   justify-content: center;
 
   @media screen and (min-width: 768px) {
-    margin-bottom: 68px;
+    margin-bottom: 72px;
     gap: 53px;
   }
 
   @media screen and (min-width: 1280px) {
-    margin-bottom: 72px;
     gap: 44px;
   }
 }
 
 .buttons__item {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767.9px) {
     width: calc((100% - 24px) / 2);
   }
 }
@@ -139,27 +138,7 @@
     font-size: 56px;
     line-height: calc(66px / 56px);
   }
-
-  // &:after {
-  //   background-image: url(/src/images/accessories/sale_line_top_mob.svg),
-  //     url(/src/images/accessories/sale_line_bottom_mob.svg);
-  //   background-repeat: no-repeat;
-  //   // background-position: top 2px left 0px, top 8px left 0px;
-  //   background-size: cover;
-  //   width: 100%;
-  //   height: 63px;
-  // }
 }
-
-// .line {
-//   background-image: url(./images/accessories/sale_line_top_mob.svg),
-//     url(./images/accessories/sale_line_bottom_mob.svg), url(../components/);
-//   background-repeat: no-repeat;
-//   background-position: top 2px left 0px, top 8px left 0px;
-//   background-size: cover;
-//   width: 100%;
-//   height: 63px;
-// }
 
 .cards {
   display: flex;
@@ -200,7 +179,7 @@
     }
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
+  @media screen and (min-width: 768px) and (max-width: 1279.9px) {
     gap: 38px;
     max-width: 608px;
     margin-bottom: 32px;
@@ -436,7 +415,7 @@
 // ________________________________________LINE________________________________________
 
 .line {
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 479.9px) {
     margin-bottom: 16px;
     .line__mob,
     .line__tab,
@@ -445,7 +424,7 @@
     }
   }
 
-  @media screen and (min-width: 480px) and (max-width: 768px) {
+  @media screen and (min-width: 480px) and (max-width: 767.9px) {
     margin-bottom: 16px;
     .line__tab,
     .line__desk,
@@ -454,7 +433,7 @@
     }
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1280px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-bottom: 24px;
 
     .line__mob,
@@ -464,7 +443,7 @@
     }
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1179.9px) {
     margin-bottom: 24px;
 
     .line__mob,
