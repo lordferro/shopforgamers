@@ -213,6 +213,15 @@
   }
 }
 
+.sale__link {
+  cursor: pointer;
+}
+
+.sale__link:hover,
+.sale__link:focus {
+  color: #86e543;
+}
+
 .sale__img {
   border-radius: 12px;
   width: 284px;
