@@ -54,6 +54,12 @@
     padding-top: 120px;
   }
 }
+.product-card {
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    flex-direction: row-reverse
+  }
+}
 .hdphone-title {
   font-family: 'Roboto';
   font-style: normal;
@@ -67,6 +73,10 @@
     font-weight: 500;
     font-size: 56px;
     line-height: 66px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-left: 121px;
   }
 }
 img {
@@ -250,10 +260,11 @@ img {
   width: 100%;
   margin-bottom: 36px;
   padding-bottom: 4px;
-
-  @media screen and (min-width: $desktop) {
   display: block;
-  }
+
+  // @media screen and (min-width: $desktop) {
+  // display: block;
+  // }
 }
 .form__name {
   margin-bottom: 4px;
@@ -317,7 +328,6 @@ textarea:focus {
 
 
 .button {
-  // position: relative;
   margin: 16px auto;
   display: flex;
   flex-wrap: wrap;
