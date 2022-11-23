@@ -257,6 +257,7 @@
 .line {
   @media screen and (max-width: 480px) {
     margin-bottom: 24px;
+    background-size: cover;
     .line__mob,
     .line__tab,
     .line__desk {
@@ -291,4 +292,3 @@
     }
   }
 }
-
