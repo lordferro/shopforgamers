@@ -1,31 +1,23 @@
 .contacts-container {
+
+  margin-left: auto;
+  margin-right: auto;
   @media screen and (min-width: 480px) {
-    .contacts-container {
+    
       width: 480px;
-    }
+    
   }
   @media screen and (min-width: 768px) {
-    .contacts-container {
+ 
       width: 768px;
-    }
+    
   }
   @media screen and (min-width: 1280px) {
-    .contacts-container {
+   
       width: 1280px;
-    }
+    
   }
-  @media screen and (min-width: 768px) {
-    background-image: url('/src/images/shevchenko/body_bg_tablet.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 0px -735px;
-  }
-  @media screen and (min-width: 1280px) {
-    background-image: url('/src/images/shevchenko/body_bg_desktop.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: -50px 140px;
-  }
+
 }
 
 .basic-link {
@@ -40,6 +32,21 @@
 }
 
 .contacts {
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 768px) {
+    background-image: url('/src/images/shevchenko/body_bg_tablet.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px -735px;
+  }
+  @media screen and (min-width: 1280px) {
+    background-image: url('/src/images/shevchenko/body_bg_desktop.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -50px 140px;
+  }
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -323,8 +330,5 @@
     @media screen and (min-width: 768px) {
       padding: 0 50px;
     }
-  }
-  @media screen and (min-width: 768px) {
-    background-color: unset;
   }
 }
