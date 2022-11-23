@@ -1,0 +1,139 @@
+.backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+.contacts-backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.9);
+}
+.contacts-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  visibility: visible;
+  z-index: 9;
+  overflow-y: scroll;
+  background-color: rgba(0, 20, 20, 0.8);
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contacts-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 40px;
+  width: 272px;
+  min-height: 367px;
+  border-radius: 4px;
+  overflow: auto;
+  background-color: $header-background-color;
+
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: $tablet) {
+    width: 688px;
+    height: 500px;
+    top: 50%;
+    left: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 768px;
+    height: 524px;
+    top: 50%;
+    left: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.contacts-modal__title {
+  margin-top: 60px;
+  margin-bottom: 32px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 56px;
+    font-size: 56px;
+    line-height: 1.18;
+    text-align: center;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 64px;
+    line-height: 1.18;
+    text-align: center;
+    margin-bottom: 56px;
+  }
+}
+.contacts-button {
+  &:hover {
+    box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.5),
+      0px 4px 10px rgba(255, 255, 255, 0.1);
+  }
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: right;
+  text-transform: uppercase;
+  color: #01383a;
+
+  margin: 0 auto;
+  display: flex;
+  width: 173px;
+  height: 51px;
+  left: 50px;
+  top: 244px;
+  background: #86e543;
+  border-radius: 16px;
+
+  @media screen and (min-width: 768px) {
+    width: 306px;
+    height: 70px;
+    font-size: 32px;
+    line-height: 1.18;
+  }
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contacts-close__btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 31px;
+  height: 31px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  cursor: pointer;
+  border: 1.5px solid #86e543;
+  background-color: $header-background-color;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.5),
+      0px 4px 10px rgba(255, 255, 255, 0.1);
+  }
+}
+
+.contacts-close__btn--icon {
+  .close-btn:hover &,
+  .close-btn:focus & {
+    &:hover {
+      box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.5),
+        0px 4px 10px rgba(255, 255, 255, 0.1);
+    }
+  }
+}

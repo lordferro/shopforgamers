@@ -31,5 +31,9 @@
 <path fill="none" stroke="#86e543" style="stroke: var(--color1, #86e543)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.2" d="M20.5 11.5l-9 9M11.5 11.5l9 9"></path>
 <path fill="none" stroke="#86e543" style="stroke: var(--color1, #86e543)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.2" d="M16 28.5c6.904 0 12.5-5.596 12.5-12.5s-5.596-12.5-12.5-12.5c-6.904 0-12.5 5.596-12.5 12.5s5.596 12.5 12.5 12.5z"></path>
 </symbol>
+
+<symbol id="icon-mob-header-menu" viewBox="0 0 48 32">
+<path   d="M45.467 13.333h-42.933c-1.399 0-2.533 0.681-2.533 1.52v0.16c0 0.839 1.134 1.52 2.533 1.52h42.933c1.399 0 2.533-0.681 2.533-1.52v-0.16c0-0.839-1.134-1.52-2.533-1.52zM45.467 26.667h-42.933c-1.399 0-2.533 0.681-2.533 1.52v0.16c0 0.839 1.134 1.52 2.533 1.52h42.933c1.399 0 2.533-0.681 2.533-1.52v-0.16c0-0.839-1.134-1.52-2.533-1.52zM45.467 0h-42.933c-1.399 0-2.533 0.681-2.533 1.52v0.16c0 0.839 1.134 1.52 2.533 1.52h42.933c1.399 0 2.533-0.681 2.533-1.52v-0.16c0-0.839-1.134-1.52-2.533-1.52z"></path>
+</symbol>
 </defs>
 </svg>
