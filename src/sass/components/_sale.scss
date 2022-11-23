@@ -1,9 +1,54 @@
 .sale {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+
   background-repeat: no-repeat;
   background-position: center;
   background-color: #043835;
+  background-image: url(../images/sale/sale_bg_mob-1x.jpg);
   padding: 0px;
+
+  // text-align: center;
+  // width: 480px;
+  // padding: 118px 0px 118px 0px;
+  // margin-left: auto;
+  // margin-right: auto;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/sale/sale_bg_mob-2x.jpg);
+  }
+
+  @media screen and (min-width: 768px) {
+    // padding: 120px 0;
+    // background-size: cover;
+      // width: 100%;
+    background-image: url(../images/sale/sale_bg_tab-1x.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/sale/sale_bg_tab-2x.jpg);
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    // padding: 200px 0px 200px 0px;
+    // width: 100%;
+    background-image: url(../images/sale/sale_bg_desk-1x.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/sale/sale_bg_desk-2x.jpg);
+    }
+  }
 }
+
+
+
+
+
+
 
 .sale__container {
   position: relative;
