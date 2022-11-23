@@ -67,18 +67,22 @@
   font-size: 32px;
   line-height: 38px;
   color: #ffffff;
-  margin-bottom: 16px;
 
   @media screen and (min-width: $tablet) {
     font-weight: 500;
     font-size: 56px;
-    line-height: 66px;
+    line-height: calc(65.63 / 56);
   }
 
   @media screen and (min-width: $desktop) {
     margin-left: 121px;
   }
 }
+
+.tittle-block {
+  margin-bottom: 16px;
+}
+
 img {
   border-radius: 4px;
 }
@@ -87,6 +91,7 @@ img {
 }
 .item-card {
   margin-bottom: 16px;
+  display: flex;
 }
 .main-img {
   margin-bottom: 16px;
@@ -97,29 +102,33 @@ img {
 }
 .price-block {
   display: flex;
+  flex-direction: column;
+  margin-left: 24px;
 }
 .price {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 100%;
+  line-height: calc(24 / 16);
   text-decoration: line-through;
   color: #8d9289;
+  margin-top: 69px;
 }
 .discount {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
-  font-size: 32px;
-  line-height: 100%;
+  font-size: 48px;
+  line-height: calc( 48 / 48);
   color: #86e543;
+  margin-top: 56px;
 }
 .img-list {
   display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 16px;
+    justify-content: flex-start;
+    gap: 24px;
 }
 .img-set {
   margin-bottom: 32px;
@@ -155,11 +164,20 @@ img {
   margin-bottom: 10px;
   @media screen and (min-width: $tablet) {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 .form__item {
   margin-bottom: 36px;
+}
+
+.form__textarea-item {
+  display: flex;
+  justify-content: center;
+}
+
+.form__textarea-label {
+  display: flex;
 }
 
 .hiddens {
@@ -257,10 +275,11 @@ img {
   }
 }
 .form__textarea {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
   margin-bottom: 36px;
   padding-bottom: 4px;
-  display: block;
 
   // @media screen and (min-width: $desktop) {
   // display: block;
