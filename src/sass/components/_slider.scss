@@ -34,19 +34,45 @@ body {
   line-height: 0;
 }
 
+/*____________________________________Зображення на всю ширину екрану________________________________*/
+
+// #desktop:checked ~ #slider {
+//   margin: 0 auto;
+
+//   /*размер всего слайдера*/
+//   width: 100vw; /*максимальнная длинна*/
+// }
+
+// article img {
+//   /*размер изображений слайдера*/
+//   width: 100%;
+//   max-height: 498px;
+
+//   @media screen and (min-width: 1280px) {
+//     max-height: 507px;
+//   }
+// }
+
+/*____________________________________Зображення на адаптивку________________________________*/
+
 #desktop:checked ~ #slider {
   margin: 0 auto;
+  width: 321px;
 
-  /*размер всего слайдера*/
-  width: 100vw; /*максимальнная длинна*/
+  @media screen and (min-width: 767.9px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1279.9px) {
+    width: 1280px;
+  }
 }
 
 article img {
-  /*размер изображений слайдера*/
   width: 100%;
   max-height: 498px;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1279.9px) {
     max-height: 507px;
   }
 }
@@ -146,36 +172,8 @@ label {
   bottom: 0;
   margin: 0 auto;
   z-index: 5;
-
-  @media screen and (min-width: 480px) {
-    width: 480px;
-  }
-
-  @media screen and (min-width: 768px) {
-    width: 768px;
-  }
-
-  @media screen and (min-width: 1279.9px) {
-    width: 1280px;
-  }
+  width: 100%;
 }
-
-.title-container.first {
-  @media screen and (min-width: 1279.9px) {
-    left: -30%;
-    right: -70%;
-  }
-  @media screen and (min-width: 1600px) {
-    left: -40%;
-    right: -60%;
-  }
-}
-
-// .title-container .first {
-//   @media screen and (min-width: 1279.9px) {
-//     text-align: center;
-//   }
-// }
 
 .slide__title {
   margin-left: 24px;
@@ -217,6 +215,8 @@ label {
 
   @media screen and (min-width: 1280px) {
     width: 596px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -248,6 +248,10 @@ label {
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
+}
+
+.word-upper {
+  text-transform: uppercase;
 }
 
 .slide__title.third {
