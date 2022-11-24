@@ -344,7 +344,7 @@
 
 // ________________________________________POINTS________________________________________
 
-.points-container {
+.points-container-acs {
   margin: 0 auto;
   width: 144px;
   @media screen and (min-width: 1280px) {
@@ -352,23 +352,23 @@
   }
 }
 
-.points__list {
+.points__list-acs {
   display: flex;
   gap: 16px;
 
   @media screen and (min-width: 1280px) {
-    .points__item:nth-of-type(2),
-    .points__item:nth-of-type(4) {
+    .points__item-acs:nth-of-type(2),
+    .points__item-acs:nth-of-type(4) {
       display: none;
     }
   }
 }
 
-.point1,
-.point2,
-.point3,
-.point4,
-.point5 {
+.point1-acs,
+.point2-acs,
+.point3-acs,
+.point4-acs,
+.point5-acs {
   content: '';
   background: #fff;
   display: block;
@@ -379,10 +379,10 @@
   overflow: visible;
 }
 
-.point1 {
+.point1-acs {
   animation: one 3s ease-in-out 1.5s infinite;
 }
-.point5 {
+.point5-acs {
   animation: five 3s ease-in-out alternate 0.2s infinite;
 }
 
