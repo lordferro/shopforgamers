@@ -119,6 +119,10 @@ img {
 .item-card {
   display: flex;
 
+  @media screen and (min-width: 1px) {
+      display: block;
+    }
+
   @media screen and (min-width: $mobile) {
     display: block;
   }
@@ -159,6 +163,12 @@ img {
   flex-direction: column;
   margin-left: 24px;
 
+  @media screen and (min-width: 1px) {
+      margin-left: 0;
+      flex-direction: inherit;
+      justify-content: space-between;
+    }
+
   @media screen and (min-width: $mobile) {
     margin-left: 0;
     flex-direction: inherit;
@@ -186,6 +196,10 @@ img {
   color: #8d9289;
   margin-top: 69px;
 
+  @media screen and (min-width: 1px) {
+      margin-top: 0px;
+    }
+
   @media screen and (min-width: $mobile) {
     margin-top: 0px;
   }
@@ -208,6 +222,24 @@ img {
   color: #86e543;
   margin-top: 24px;
   margin-bottom: 16px;
+
+  @media screen and (min-width: 1px) {
+    font-size: 32px;
+    line-height: calc(32 / 32);
+    }
+
+  @media screen and (min-width: $mobile) {
+    font-size: 32px;
+    line-height: calc(32 / 32);
+  }
+
+  @media screen and (min-width: $tablet) {
+    
+  }
+
+  @media screen and (min-width: $desktop) {
+    
+  }
 }
 .img-list {
   display: flex;
