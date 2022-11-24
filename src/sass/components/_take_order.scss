@@ -260,6 +260,32 @@ img {
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
+
+  @media screen and (min-width: $mobile) {
+    display: flex;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: block;
+  }
+}
+
+.container-form {
+  @media screen and (min-width: $mobile) {
+    display: block;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: block;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
 }
 
 .form__title {
@@ -360,6 +386,9 @@ img {
       0px 4px 10px rgba(255, 255, 255, 0.1);
   }
 
+  @media screen and (min-width: 1px) {
+  }
+
   @media screen and (min-width: $tablet) {
     width: 590px;
     font-size: 18px;
@@ -404,6 +433,16 @@ img {
   flex-direction: column;
   max-width: 100%;
   padding-bottom: 4px;
+
+  @media screen and (min-width: $mobile) {
+  }
+
+  @media screen and (min-width: $tablet) {
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-left: 20px;
+  }
 
   // @media screen and (min-width: $desktop) {
   // display: block;
@@ -466,6 +505,7 @@ textarea:focus {
   @media screen and (min-width: $desktop) {
       display: flex;
       flex-direction: row;
+      justify-content: center;
     }
 }
 
@@ -475,6 +515,16 @@ textarea:focus {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
+  @media screen and (min-width: $mobile) {
+  }
+
+  @media screen and (min-width: $tablet) {
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin: 0;
+  }
 }
 
 .button:last-child {
