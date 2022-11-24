@@ -96,7 +96,7 @@
   
     margin-bottom: 16px;
 
-    @media screen and (min-width: $mobile) {
+    @media screen and (min-width: 1px) {
         display: none;
       }
       @media screen and (min-width: $tablet) {
@@ -187,7 +187,7 @@ img {
   margin-top: 69px;
 
   @media screen and (min-width: $mobile) {
-    margin-top: 16px;
+    margin-top: 0px;
   }
 
   @media screen and (min-width: $tablet) {
@@ -206,7 +206,8 @@ img {
   font-size: 48px;
   line-height: calc( 48 / 48);
   color: #86e543;
-  margin-top: 56px;
+  margin-top: 24px;
+  margin-bottom: 16px;
 }
 .img-list {
   display: flex;
@@ -244,8 +245,12 @@ img {
   }
 }
 .form__field {
-  width: 100%;
+  max-width: 100%;
   margin-bottom: 10px;
+  @media screen and (min-width: $mobile) {
+      display: flex;
+      justify-content: center;
+    }
   @media screen and (min-width: $tablet) {
     display: flex;
     justify-content: center;
@@ -362,7 +367,6 @@ img {
   display: flex;
   flex-direction: column;
   max-width: 100%;
-  margin-bottom: 36px;
   padding-bottom: 4px;
 
   // @media screen and (min-width: $desktop) {
@@ -376,7 +380,7 @@ img {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.11;
-  color: #ffffff;
+  color: #CDCDCD;;
 }
 textarea {
   padding-top: 12px;
