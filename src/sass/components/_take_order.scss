@@ -50,7 +50,6 @@
   line-height: 1.17;
   color: #ffffff;
   padding-top: 40px;
-  margin-bottom: 35px;
 
   @media screen and (min-width: $tablet) {
     font-size: 56px;
@@ -63,6 +62,46 @@
     display: flex;
   }
 }
+
+.lineGuide {
+    max-height: 27px;
+    @media screen and (max-width: 479px) {
+        margin-bottom: 20px;
+        .line__mob,
+        .line__tab,
+        .line__desk {
+        display: none;
+        }
+    }
+  
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+        margin-bottom: 20px;
+        .line__tab,
+        .line__desk,
+        .line__320 {
+            display: none;
+        }
+    }
+  
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+        margin-bottom: 24px;
+        .line__mob,
+        .line__desk,
+        .line__320 {
+            display: none;
+        }
+    }
+  
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 16px;
+        .line__mob,
+        .line__tab,
+        .line__320 {
+            display: none;
+        }
+    }
+}
+
 .hdphone-title {
   font-family: 'Roboto';
   font-style: normal;
