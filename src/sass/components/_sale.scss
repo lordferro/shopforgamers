@@ -5,7 +5,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-color: #043835;
-  background-image: url(../images/sale/sale_bg_mob-1x.jpg);
+  background-image: url(../images/stelmashchuk/sale_bg_mob-1x.jpg);
   padding-top: 48px;
   padding-bottom: 48px;
 
@@ -17,25 +17,25 @@
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(../images/sale/sale_bg_mob-2x.jpg);
+    background-image: url(../images/stelmashchuk/sale_bg_mob-2x.jpg);
   }
 
   @media screen and (min-width: 768px) {
       width: 100%;
-    background-image: url(../images/sale/sale_bg_tab-1x.jpg);
+    background-image: url(../images/stelmashchuk/sale_bg_tab-1x.jpg);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/sale/sale_bg_tab-2x.jpg);
+      background-image: url(../images/stelmashchuk/sale_bg_tab-2x.jpg);
     }
   }
 
   @media screen and (min-width: 1200px) {
-    background-image: url(../images/sale/sale_bg_desk-1x.jpg);
+    background-image: url(../images/stelmashchuk/sale_bg_desk-1x.jpg);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/sale/sale_bg_desk-2x.jpg);
+      background-image: url(../images/stelmashchuk/sale_bg_desk-2x.jpg);
     }
   }
 }
