@@ -72,6 +72,8 @@
   line-height: 38px;
   color: #ffffff;
 
+  margin-bottom: 16px;
+
   @media screen and (min-width: $tablet) {
     font-weight: 500;
     font-size: 56px;
@@ -83,9 +85,6 @@
   }
 }
 
-.tittle-block {
-  margin-bottom: 16px;
-}
 
 img {
   border-radius: 4px;
