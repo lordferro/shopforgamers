@@ -61,7 +61,6 @@
 .product-card {
   @media screen and (min-width: $desktop) {
     display: flex;
-    flex-direction: row-reverse
   }
 }
 .hdphone-title {
@@ -74,14 +73,39 @@
 
   margin-bottom: 16px;
 
+
   @media screen and (min-width: $tablet) {
     font-weight: 500;
     font-size: 56px;
     line-height: calc(65.63 / 56);
   }
+  
 
   @media screen and (min-width: $desktop) {
-    margin-left: 121px;
+    display: none;
+  }
+}
+
+.hdphone-title-tabs {
+  font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+    color: #ffffff;
+  
+    margin-bottom: 16px;
+
+    @media screen and (min-width: $mobile) {
+        display: none;
+      }
+      @media screen and (min-width: $tablet) {
+    display: none;
+  }
+  
+
+  @media screen and (min-width: $desktop) {
+    display: inherit;
   }
 }
 
@@ -93,20 +117,64 @@ img {
   border-radius: 12px;
 }
 .item-card {
-  margin-bottom: 16px;
   display: flex;
+
+  @media screen and (min-width: $mobile) {
+    display: block;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
 }
 .main-img {
   margin-bottom: 16px;
 
   @media screen and (min-width: $tablet) {
   margin-bottom: 24px;
+  }
 }
+
+.set-wrap {
+@media screen and (min-width: $mobile) {
+    display: block;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: block;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
 }
+
+
 .price-block {
   display: flex;
   flex-direction: column;
   margin-left: 24px;
+
+  @media screen and (min-width: $mobile) {
+    margin-left: 0;
+    flex-direction: inherit;
+    justify-content: space-between;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    margin-left: 24px;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  @media screen and (min-width: $desktop) {
+    
+  }
 }
 .price {
   font-family: 'Roboto';
@@ -117,6 +185,19 @@ img {
   text-decoration: line-through;
   color: #8d9289;
   margin-top: 69px;
+
+  @media screen and (min-width: $mobile) {
+    margin-top: 16px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin-top: 69px;
+    
+  }
+
+  @media screen and (min-width: $desktop) {
+    
+  }
 }
 .discount {
   font-family: 'Roboto';
