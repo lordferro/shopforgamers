@@ -299,6 +299,10 @@ img {
 }
 
 .images-block {
+  @media screen and (min-width: 1px) {
+      display: none;
+    }
+
   @media screen and (min-width: $mobile) {
     display: none;
   }
@@ -309,8 +313,12 @@ img {
 
   @media screen and (min-width: $desktop) {
     display: flex;
-        flex-direction: column;
   }
+}
+
+.text-space {
+  display: flex;
+  justify-content: space-between;
 }
 
 .form__container {
