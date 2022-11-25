@@ -7,18 +7,20 @@
         margin: 0 auto;
     }
 
+    @media screen and (min-width: 480px) {
+        max-width: 350px;
+    }
+
     @media screen and (min-width:768px) {
         display: flex;
         max-width: 100%;
         padding: 40px 51px 40px 40px;
-        margin: 0 auto;
+       
     }
 
     @media screen and (min-width:1280px) {
         display: flex;
-        max-width: 100%;
-        padding: 40px 51px 40px 40px;
-        margin: 0 auto;
+        max-width: 100%;       
         justify-content: center;
     }
 }
@@ -28,9 +30,8 @@
     @media screen and (min-width:379.98px),
     (max-width:480px) {
         display: flex;
-    }
-
-    @media screen and (min-width:768px) {}
+        justify-content: space-between;
+    }   
 }
 
 .contant-flex {
