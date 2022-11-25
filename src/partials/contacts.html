@@ -1,3 +1,105 @@
-<section>
-    
-</section>
+    <section class="contacts">
+      <div class="contacts-container">
+        <div class="contacts__title">
+          <h2 class="contacts__title--text">Contacts</h2>
+        </div>
+        <div class="contacts__image">
+          <picture>
+            <source
+              media="(min-width:768px)"
+              srcset="
+                images/shevchenko/contacts-tablet.png 1x,
+                images/shevchenko/contacts-tablet.png 2x
+              "
+            />
+            <source
+              media="(min-width:1280px)"
+              srcset="
+                images/shevchenko/contacts-desktop.png 1x,
+                images/shevchenko/contacts-desktop.png 2x
+              "
+            />
+            <img
+              srcset="
+                images/shevchenko/contacts-mobile.png 1x,
+                images/shevchenko/contacts-mobile.png 2x
+              "
+              src="images/shevchenko/contacts-tablet.png"
+              alt="laptop, gamepad and keyboard on the table"
+            />
+          </picture>
+        </div>
+        <div class="contacts__container">
+          <div class="contacts__container--column">
+            <div class="contacts__infoline">
+              <p>
+                In case of queries about order handling and/or delay, drop us an
+                email at
+                <a class="basic-link" href="mailto:info@shopforgamers.com"
+                  >info@shopforgamers.com</a
+                >
+              </p>
+            </div>
+            <div class="contacts__infoline">
+              <span class="contacts__infoline--title">Email</span>
+              <a
+                class="contacts__infoline--link"
+                href="mailto:sfg.info@gmail.com"
+                >sfg.info@gmail.com</a
+              >
+            </div>
+            <div class="contacts__infoline">
+              <span class="contacts__infoline--title">Phone Number</span>
+              <a class="contacts__infoline--link" href="tel:+380936432288"
+                >+38 (093) 643 22 88</a
+              >
+              <a class="contacts__infoline--link" href="tel:+380503454423"
+                >+38 (050) 345 44 23</a
+              >
+            </div>
+          </div>
+          <div class="contacts__container--column">
+            <h3 class="contacts__form--title">CONTACT US</h3>
+            <div class="contacts__form">
+              <form>
+                <div class="contacts__form--line">
+                  <input
+                    class="contacts__form--field"
+                    type="text"
+                    id="name"
+                    placeholder="Name"
+                  />
+                </div>
+                <div class="contacts__form--line">
+                  <input
+                    class="contacts__form--field"
+                    type="email"
+                    id="email"
+                    placeholder="Email"
+                  />
+                </div>
+                <div class="contacts__form--line">
+                  <label class="contacts__form--label" for="comment"
+                    >Leave your message</label
+                  >
+                  <textarea
+                    class="contacts__form--field contacts__form--field_txtarea"
+                    id="comment"
+                  ></textarea>
+                </div>
+                <button
+                  id="submit"
+                  class="contacts__form--submit"
+                  type="button"
+                  data-modal__buy-open
+                >
+                  Send
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

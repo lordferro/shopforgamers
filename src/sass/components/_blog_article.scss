@@ -1,0 +1,318 @@
+
+
+.blog-article__container {
+    padding-left: 16px;
+    padding-right: 16px;
+    min-width: 320px;
+
+    @media screen and (min-width: 480px) {
+        width: 480px; 
+        margin: 0 auto;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    
+    @media screen and (min-width: 768px) {
+        width: 768px;
+
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 1280px;
+    }
+}
+
+.blog-article__section {
+    padding-top: 40px;
+    padding-bottom: 48px;
+
+    background-color: #01383A;
+
+    @media screen and (min-width: 768px) {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        padding-top: 112px;
+    }
+}
+
+/*основной текст*/
+.blog-article__body {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.19;
+
+    color: #FFFFFF;
+}
+
+/*заголовки*/
+.blog-article__h1 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.16;
+    color: #FFFFFF;
+
+    text-align: left;   
+
+    @media screen and (min-width: 768px) {
+        font-size: 56px;
+        line-height: 1;
+        
+        margin-bottom: 24px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        font-size: 36px;
+        line-height: 1.16;
+
+        margin-bottom: 16px;
+    }
+}
+
+.blog-article__h2 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1;
+    margin-bottom: 8px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 24px;
+        line-height: 1;
+        color: #86E543;
+
+        margin-bottom: 32px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 32px;
+    }
+}
+
+.blog-article__block {
+    margin-top: 20px;
+
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+
+        .blog-article__h2 {
+            display: flex;
+            margin: 0;
+        }
+
+        .blog-article__data {
+            display: flex;
+            margin: 0;
+        }
+    }
+}
+
+.blog-article__img-mobile {
+    // max-width: 100%;
+    margin-top: 16px;
+
+    @media screen and (min-width: 767px) {
+        display: none;
+    }
+}
+
+.blog-article__image-wrapper {
+    // display: flex;
+    // align-items: center;
+    width: 100%;
+    max-height: 228px;
+    overflow: hidden;
+
+    @media screen and (min-width: 480px) {
+        width: 480px;
+
+        margin: 0 auto;
+    }
+}
+
+.blog-article__img-tab-plus {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: block;
+        float: left;
+        margin-top: 24px;
+        margin-right: 40px;
+        margin-left: auto;
+        margin-bottom: 16px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-top: 54px;
+        margin-right: 121px;
+        margin-bottom: 48px;
+    }
+}
+
+.blog-article__data {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1;
+
+    color: #8D9289;
+
+    margin-bottom: 8px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 24px;
+        line-height: 1;
+
+        margin-bottom: 16px;
+    }
+}
+
+.blog-article__list {
+    text-align: left;
+
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    & p {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    li {
+        list-style: decimal;
+    } 
+
+    & ol {
+        margin: 0 ;
+        padding-left: 15px;
+
+
+        
+    }
+
+    @media screen and (min-width: 768px) {
+        color: #86E543;
+        padding-left: 25px;
+        
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-top: 65px;
+    }
+}
+
+.blog-article__margin-block {
+    display: none;
+
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+        display: block;
+        height: 125px;
+    }
+}
+.blog-article__container {
+    &>p {
+        margin-bottom: 1rem;
+    }
+}
+
+
+.blog-article__container.article {
+
+    & p {
+        @media screen and (min-width: 768px) {
+            font-size: 24px;
+            line-height: 1.17;
+        }
+    }
+
+    & ol {
+        @media screen and (min-width: 768px) {
+            font-size: 24px;
+            line-height: 1.17;
+        }
+    }
+}
+
+// .blog-article__sprite {
+//     position: absolute;
+//     background-image: url('../images-article/vectormob-1.svg'), url('../images-article/vectormob-2.svg');
+//     background-repeat: no-repeat;
+//     background-position: top 2px left 0px, top 10px left -2px;
+//     background-size: cover;
+//     width: 100%;
+//     height: 63px;
+//     left: 0;
+//     top: 71px;
+
+//     @media screen and (min-width: 768px) {
+//         position: absolute;
+//         background-image: url('../images-article/vectortab-1.svg'), url('../images-article/vectortab-2.svg');
+//         background-repeat: no-repeat;
+//         background-position: top 2px left 0px, top 8px left 0px;
+//         background-size: cover;
+//         width: 100%;
+//         height: 63px;
+//         left: 0;
+//         top: 245px;
+//     }
+
+
+//     @media screen and (min-width: 1280px) {
+//         position: absolute;
+//         background-image: url('../images-article/vectorpc-1.svg'), url('../images-article/vectorpc-2.svg');
+//         background-repeat: no-repeat;
+//         background-position: top 2px left 0px, top 8px left 0px;
+//         background-size: cover;
+//         width: 100%;
+//         height: 63px;
+//         left: 0;
+//         top: 145px;
+//     }
+// }
+
+.article {
+    position: relative;
+}
+
+.lineGuide {
+    @media screen and (max-width: 479px) {
+        margin-bottom: 20px;
+        .line__mob,
+        .line__tab,
+        .line__desk {
+        display: none;
+        }
+    }
+  
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+        margin-bottom: 20px;
+        .line__tab,
+        .line__desk,
+        .line__320 {
+            display: none;
+        }
+    }
+  
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+        margin-bottom: 24px;
+        .line__mob,
+        .line__desk,
+        .line__320 {
+            display: none;
+        }
+    }
+  
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 16px;
+        .line__mob,
+        .line__tab,
+        .line__320 {
+            display: none;
+        }
+    }
+}

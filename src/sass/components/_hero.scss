@@ -1,0 +1,256 @@
+.hero{
+    background-image: url(../images/gladkovich/bg-mob.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    @media (min-device-pixel-ratio: 2),
+           (min-resolution: 192dpi),
+           (min-resolution: 2dppx){
+           background-image: url(../images/gladkovich/bg-mob-2x.jpg); 
+        }
+
+   @media screen and (min-width: 768px){
+      background-image: url(../images/gladkovich/bg-tab.jpg);
+
+        @media (min-device-pixel-ratio: 2),
+               (min-resolution: 192dpi),
+               (min-resolution: 2dppx) {
+               background-image: url(../images/gladkovich/bg-tab-2x.jpg);
+        }
+   }
+   @media screen and (min-width: 1280px){
+      background-image: url(../images/gladkovich/bg-desk.jpg);
+       
+        @media (min-device-pixel-ratio: 2),
+               (min-resolution: 192dpi),
+               (min-resolution: 2dppx) {
+               background-image: url(../images/gladkovich/bg-desk-2x.jpg);
+        }
+   }
+   
+}
+
+.hero__container {
+    margin: 0 auto;
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+
+    @media screen and (min-width:480px) {
+        width: 480px;
+    }
+
+    @media screen and (min-width:768px) {
+        width: 768px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    @media screen and (min-width:1280px) {
+        width: 1280px;
+        padding-left: 142px;
+    }
+
+    background-image: url(../images/gladkovich/img1-mob.png),
+                      url(../images/gladkovich/img2-mob.png),
+                      url(../images/gladkovich/img3-mob.png);
+                      
+
+    background-repeat: no-repeat;
+    background-size: 95px, 150px, 95px;
+    background-position: top 57px left 16px, top -20px right 1px, top 390px right 120px;
+    
+    mix-blend-mode: luminosity;
+
+    padding-top: 180px;
+    padding-bottom: 183px;
+
+
+    @media (min-device-pixel-ratio: 2),
+           (min-resolution: 192dpi),
+           (min-resolution: 2dppx) {
+           background-image: url(../images/gladkovich/img1-mob-2x.png),
+                             url(../images/gladkovich/img2-mob-2x.png),
+                             url(../images/gladkovich/img3-mob-2x.png);
+
+    }
+
+    @media screen and (min-width: 768px) {
+
+        background-image: url(../images/gladkovich/img1-tab.png),
+                          url(../images/gladkovich/img2-tab.png),
+                          url(../images/gladkovich/img3-tab.png);
+                          
+
+        background-repeat: no-repeat;
+        background-size: 150px, 220px, 143px;
+        background-position: top 49px right 190px, top 226px right 45px, top 499px left 421px;
+
+        padding-top: 154px;
+        padding-bottom: 278px;
+
+        @media (min-device-pixel-ratio: 2),
+               (min-resolution: 192dpi),
+               (min-resolution: 2dppx) {
+               background-image: url(../images/gladkovich/img1-tab-2x.png),
+                                 url(../images/gladkovich/img2-tab-2x.png),
+                                 url(../images/gladkovich/img3-tab-2x.png);
+                                 
+        }
+    }
+
+    @media screen and (min-width: 1280px) {
+
+        background-image: url(../images/gladkovich/img1-desk.png),
+                          url(../images/gladkovich/img2-desk.png),
+                          url(../images/gladkovich/img3-desk.png);
+                          
+
+        background-repeat: no-repeat;
+        background-size: 180px, 300px, 270px;
+        background-position: top 75px left 630px, top 155px right 110px, bottom 100px left 600px;
+
+        padding-top: 180px;
+        padding-bottom: 283px;
+
+        @media (min-device-pixel-ratio: 2),
+               (min-resolution: 192dpi),
+               (min-resolution: 2dppx) {
+               background-image: url(../images/gladkovich/img1-desk-2x.png),
+                                 url(../images/gladkovich/img2-desk-2x.png),
+                                 url(../images/gladkovich/img3-desk-2x.png);
+                                 
+        }
+    }
+
+}
+.hero__box{
+    position: relative;
+    margin: 0 auto;
+    max-width: 100%;  
+   
+
+    background-image: url(../images/gladkovich/fon-hero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+                background-image: url(../images/gladkovich/fon-hero-2x.png);}
+
+    @media screen and (min-width: 768px) {
+    
+            background-image: url(../images/gladkovich/fon-hero.png);
+            background-repeat: no-repeat;
+            background-size: 1100px;
+            background-position: top -50px left -250px;
+    }
+
+    @media screen and (min-width: 1280px) {
+   
+            background-image: url(../images/gladkovich/fon-hero.png);
+            background-repeat: no-repeat;
+            background-size: 1300px;
+            background-position: top -160px left 50%;
+    }
+}
+
+.hero__title {
+
+    margin: 0 auto;
+    margin-bottom: 25px;
+    max-width: 247px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+    color: #FFFFFF; 
+    
+}
+
+@media screen and (min-width: 768px) {
+
+    .hero__title {
+
+        font-size: 56px;
+        line-height: 66px;
+        margin: 0;
+        max-width: 388px;
+        text-align: start;
+        margin-bottom: 94px;
+    }
+}
+
+ @media screen and (min-width: 1280px) {
+
+    .hero__title {
+
+        font-size: 64px;
+        line-height: 75px;
+        margin: 0;
+        max-width: 515px;
+        text-align: start;
+        margin-bottom: 40px;
+
+    }
+}
+
+.hero__link {
+
+    width: 173px;
+    height: 51px;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 140px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #01383A;
+    background: #86E543;
+    border-radius: 16px;
+
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+    &:hover,
+    &:focus {
+        box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.5), 0px 4px 10px rgba(255, 255, 255, 0.1);
+    }    
+}
+
+@media screen and (min-width: 768px) {
+
+    .hero__link {
+    margin: 0 auto;
+    width: 306px;
+    height: 70px;
+    font-size: 32px;
+    line-height: 38px;
+    bottom: 190px;
+    transform: translateX(-340px);   
+    }
+}
+
+@media screen and (min-width: 1280px) {
+
+    .hero__link{
+    bottom: 200px;
+    transform: translateX(-500px);
+    }
+}
