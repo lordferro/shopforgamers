@@ -222,7 +222,7 @@ img {
   }
 
   @media screen and (min-width: $desktop) {
-    
+    display: none;
   }
 }
 .price {
@@ -292,6 +292,25 @@ img {
   @media screen and (min-width: $tablet) {
     margin-bottom: 48px;
 }
+
+@media screen and (min-width: $desktop) {
+  margin-left: 121px;
+}
+}
+
+.images-block {
+  @media screen and (min-width: $mobile) {
+    display: none;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+        flex-direction: column;
+  }
 }
 
 .form__container {
