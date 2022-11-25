@@ -125,21 +125,6 @@
 
 // ________________________________________LIST________________________________________
 
-.all-accessories__title {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: calc(28px / 24px);
-
-  color: #ffffff;
-  @media screen and (min-width: 768px) {
-    margin-left: calc(142px - 40px);
-    font-size: 56px;
-    line-height: calc(66px / 56px);
-  }
-}
-
 .cards {
   display: flex;
   flex-wrap: wrap;
@@ -380,10 +365,10 @@
 }
 
 .point1-acs {
-  animation: one 3s ease-in-out 1.5s infinite;
+  animation: one 6s ease-in-out 6s infinite;
 }
 .point5-acs {
-  animation: five 3s ease-in-out alternate 0.2s infinite;
+  animation: five 6s ease-in-out alternate 3s infinite;
 }
 
 @keyframes one {
@@ -412,9 +397,9 @@
   }
 }
 
-// ________________________________________LINE________________________________________
+// ________________________________________LINE Like POLYLINE________________________________________
 
-.line {
+.line-accessories {
   @media screen and (max-width: 479.9px) {
     margin-bottom: 16px;
     .line__mob,
@@ -453,3 +438,63 @@
     }
   }
 }
+
+.all-accessories__title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: calc(28px / 24px);
+
+  color: #ffffff;
+  @media screen and (min-width: 768px) {
+    margin-left: calc(142px - 40px);
+    font-size: 56px;
+    line-height: calc(66px / 56px);
+  }
+}
+
+// /*____________________________________LINE Like SVG________________________ */
+
+// .all-accessories__title {
+//   font-family: 'Roboto';
+//   font-style: normal;
+//   font-weight: 600;
+//   font-size: 24px;
+//   line-height: calc(28px / 24px);
+//   color: #ffffff;
+
+//   width: 100%;
+//   display: flex;
+//   justify-content: flex-start;
+//   padding-bottom: 27px;
+//   position: relative;
+
+//   @media screen and (min-width: 768px) {
+//     padding-bottom: 51px;
+//     padding-left: calc(142px - 40px);
+//     font-size: 56px;
+//     line-height: calc(66px / 56px);
+//   }
+
+//   &::after {
+//     content: '';
+//     display: block;
+//     width: 100%;
+//     height: 60px;
+//     position: absolute;
+//     left: 0;
+//     bottom: -3px;
+//     background-image: url('/src/images/kruglyak/line-accessories-mob.svg');
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     z-index: 5;
+//     @media screen and (min-width: 768px) {
+//       background-image: url('/src/images/kruglyak/line-accessories-tab.svg');
+//       height: 74px;
+//     }
+//     @media screen and (min-width: 1280px) {
+//       background-image: url('/src/images/kruglyak/line-accessories-desk.svg');
+//     }
+//   }
+// }
