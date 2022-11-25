@@ -254,6 +254,19 @@ img {
     
   }
 }
+
+.price-two {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: calc(24 / 24);
+  text-decoration: line-through;
+  color: #8d9289;
+
+  margin: 44px 0px 52px 0px;
+}
+
 .discount {
   font-family: 'Roboto';
   font-style: normal;
@@ -282,6 +295,18 @@ img {
     
   }
 }
+
+.discount-two {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: calc( 48 / 48);
+  color: #86e543;
+
+  margin: 32px 0px 40px 65px;
+}
+
 .img-list {
   display: flex;
     align-items: center;
@@ -315,12 +340,12 @@ img {
 
   @media screen and (min-width: $desktop) {
     display: flex;
+    flex-direction: column;
   }
 }
 
 .text-space {
   display: flex;
-  justify-content: space-between;
 }
 
 .form__container {
