@@ -427,6 +427,7 @@ img {
     margin-bottom: 40px;
     height: 24px;
   }
+
 }
 
 .form__item:last-child {
@@ -499,12 +500,12 @@ img {
   }
 }
 
+
 .form__select {
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
   border: none;
-  background: url("../images/icon_down.svg") no-repeat right;
   background-color: #01383a;
   height: 28px;
   min-width: 288px;
@@ -517,7 +518,6 @@ img {
   outline: transparent;
   outline: none;
   border-bottom: 1px solid #86e543;
-
  
 
   @media screen and (min-width: $tablet) {
@@ -532,20 +532,20 @@ img {
 }
 
 .form__textarea { 
-  display: flex;
-  margin-top: 44px;
+  display: flex;  
   flex-direction: column;
   max-width: 100%;
   padding-bottom: 4px;
 
   @media screen and (min-width: $mobile) {
-  }
+  }margin-top: 44px;
 
   @media screen and (min-width: $tablet) {
   }
 
   @media screen and (min-width: $desktop) {
     margin-left: 20px;
+    margin-top: 0;
   }
 
   // @media screen and (min-width: $desktop) {
@@ -581,10 +581,6 @@ textarea {
 
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:hover,
-  &:focus {
-    box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.5), 0px 4px 10px rgba(255, 255, 255, 0.1);
-  }
 
   @media screen and (min-width: $tablet) {
     width: 589px;
