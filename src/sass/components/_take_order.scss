@@ -1,10 +1,14 @@
-.container__take-order{
-  padding: 0 40px;
+.container__take-order {
+  padding: 0 16px;
+
+  @media screen and (min-width: $tablet) {
+    padding: 0 40px;
+  }
 }
 .order {
   background-color: $header-background-color;
   position: relative;
-  }
+}
 @media screen and (max-width: $tablet) {
   .order {
     background-image: url(../images/background/mobile/frame_mobile.jpg);
@@ -43,7 +47,7 @@
 }
 
 .order__title {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
@@ -63,59 +67,59 @@
   }
 }
 
-.line-Guide  {
+.line-Guide {
   display: block;
-    max-height: 27px;
-    margin-bottom: 40px;
-    @media screen and (max-width: 479px) {
-        margin-bottom: 24px;
-        .line__mob,
-        .line__tab,
-        .line__desk {
-        display: none;
-        }
-        .line__320 {
-          display: block;
-        }
+  max-height: 27px;
+  margin-bottom: 40px;
+  @media screen and (max-width: 479px) {
+    margin-bottom: 24px;
+    .line__mob,
+    .line__tab,
+    .line__desk {
+      display: none;
     }
-  
-    @media screen and (min-width: 480px) and (max-width: 767px) {
-        .line__tab,
-        .line__desk,
-        .line__320 {
-            display: none;
-        }
-        .line__mob {
-          display: block;
-        }
+    .line__320 {
+      display: block;
     }
-  
-    @media screen and (min-width: 768px) and (max-width: 1279px) {
-        .line__mob,
-        .line__desk,
-        .line__320 {
-            display: none;
-        }
-        .line__tab {
-          display: block;
-        }
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    .line__tab,
+    .line__desk,
+    .line__320 {
+      display: none;
     }
-  
-    @media screen and (min-width: 1280px) {
-        margin-bottom: 48px;
-        .line__mob,
-        .line__tab,
-        .line__320 {
-            display: none;
-        }
-        .line__desk {
-          display: block;
-        }
+    .line__mob {
+      display: block;
     }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    .line__mob,
+    .line__desk,
+    .line__320 {
+      display: none;
+    }
+    .line__tab {
+      display: block;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 48px;
+    .line__mob,
+    .line__tab,
+    .line__320 {
+      display: none;
+    }
+    .line__desk {
+      display: block;
+    }
+  }
 }
 
 .hdphone-title {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 32px;
@@ -124,13 +128,11 @@
 
   margin-bottom: 16px;
 
-
   @media screen and (min-width: $tablet) {
     font-weight: 500;
     font-size: 55px;
     line-height: calc(66 / 56);
   }
-  
 
   @media screen and (min-width: $desktop) {
     display: none;
@@ -138,31 +140,27 @@
 }
 
 .hdphone-title-tabs {
-  font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 38px;
-    color: #ffffff;
-  
-    margin-bottom: 16px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+  color: #ffffff;
 
-    @media screen and (min-width: 1px) {
-        display: none;
-      }
-      @media screen and (min-width: $tablet) {
+  margin-bottom: 16px;
+
+  @media screen and (min-width: 1px) {
     display: none;
   }
-  
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
 
   @media screen and (min-width: $desktop) {
     display: inherit;
     font-size: 56px;
-    
   }
 }
-
-
 
 img {
   border-radius: 4px;
@@ -174,8 +172,8 @@ img {
   display: flex;
 
   @media screen and (min-width: 1px) {
-      display: block;
-    }
+    display: block;
+  }
 
   @media screen and (min-width: $mobile) {
     display: block;
@@ -193,12 +191,12 @@ img {
   margin-bottom: 16px;
 
   @media screen and (min-width: $tablet) {
-  margin-bottom: 24px;
+    margin-bottom: 24px;
   }
 }
 
 .set-wrap {
-@media screen and (min-width: $mobile) {
+  @media screen and (min-width: $mobile) {
     display: block;
   }
 
@@ -211,17 +209,16 @@ img {
   }
 }
 
-
 .price-block {
   display: flex;
   flex-direction: column;
   margin-left: 24px;
 
   @media screen and (min-width: 1px) {
-      margin-left: 0;
-      flex-direction: inherit;
-      justify-content: space-between;
-    }
+    margin-left: 0;
+    flex-direction: inherit;
+    justify-content: space-between;
+  }
 
   @media screen and (min-width: $mobile) {
     margin-left: 0;
@@ -239,10 +236,9 @@ img {
   @media screen and (min-width: $desktop) {
     display: none;
   }
-  
 }
 .price {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -252,8 +248,8 @@ img {
   margin-top: 69px;
 
   @media screen and (min-width: 1px) {
-      margin-top: 0px;
-    }
+    margin-top: 0px;
+  }
 
   @media screen and (min-width: $mobile) {
     margin-top: 0px;
@@ -261,16 +257,14 @@ img {
 
   @media screen and (min-width: $tablet) {
     margin-top: 69px;
-    
   }
 
   @media screen and (min-width: $desktop) {
-    
   }
 }
 
 .price-two {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
@@ -282,11 +276,11 @@ img {
 }
 
 .discount {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 48px;
-  line-height: calc( 48 / 48);
+  line-height: calc(48 / 48);
   color: #86e543;
   margin-top: 24px;
   margin-bottom: 16px;
@@ -294,7 +288,7 @@ img {
   @media screen and (min-width: 1px) {
     font-size: 32px;
     line-height: calc(32 / 32);
-    }
+  }
 
   @media screen and (min-width: $mobile) {
     font-size: 32px;
@@ -302,20 +296,18 @@ img {
   }
 
   @media screen and (min-width: $tablet) {
-    
   }
 
   @media screen and (min-width: $desktop) {
-    
   }
 }
 
 .discount-two {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 48px;
-  line-height: calc( 48 / 48);
+  line-height: calc(48 / 48);
   color: #86e543;
 
   margin: 32px 0px 40px 65px;
@@ -323,26 +315,26 @@ img {
 
 .img-list {
   display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 24px;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 24px;
 }
 .img-set {
   margin-bottom: 32px;
 
   @media screen and (min-width: $tablet) {
     margin-bottom: 48px;
-}
+  }
 
-@media screen and (min-width: $desktop) {
-  margin-left: 121px;
-}
+  @media screen and (min-width: $desktop) {
+    margin-left: 121px;
+  }
 }
 
 .images-block {
   @media screen and (min-width: 1px) {
-      display: none;
-    }
+    display: none;
+  }
 
   @media screen and (min-width: $mobile) {
     display: none;
@@ -365,10 +357,10 @@ img {
 .contact-flex {
   margin-left: auto;
   @media screen and (min-width: $tablet) {
-   margin-left: 48px;
+    margin-left: 48px;
   }
-   @media screen and (min-width: $desktop) {
-   margin-left: 0;
+  @media screen and (min-width: $desktop) {
+    margin-left: 0;
   }
 }
 
@@ -408,7 +400,7 @@ img {
 .form__title {
   text-transform: uppercase;
   color: #86e543;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 36px;
@@ -455,18 +447,12 @@ img {
   border-bottom: 1px solid #86e543;
   background-color: #01383a;
 
-  &:hover,
-  &:focus {
-    border-bottom: 1px solid #86e543;
-    box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.5),
-      0px 4px 10px rgba(255, 255, 255, 0.1);
-  }
 }
 .form__field input::placeholder {
   display: flex;
   align-items: left;
   justify-content: flex-start;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -483,7 +469,7 @@ img {
   background-color: #01383a;
   height: 28px;
   min-width: 288px;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -495,13 +481,6 @@ img {
 
   @media screen and (min-width: $desktop) {
     height: 25px;
-  }
-
-  &:hover,
-  &:focus {
-    border-bottom: 1px solid #86e543;
-    box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.5),
-      0px 4px 10px rgba(255, 255, 255, 0.1);
   }
 
   @media screen and (min-width: 1px) {
@@ -519,11 +498,11 @@ img {
   -webkit-appearance: none;
   appearance: none;
   border: none;
-  background: url('../images/icon_down.svg') no-repeat right;
+  background: url("../images/icon_down.svg") no-repeat right;
   background-color: #01383a;
   height: 28px;
   min-width: 288px;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -533,24 +512,20 @@ img {
   outline: none;
   border-bottom: 1px solid #86e543;
 
-  @media screen and (min-width: $desktop) {
-    height: 24px;
-  }
-
-  &:hover,
-  &:focus {
-    border-bottom: 1px solid #86e543;
-    box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.5),
-      0px 4px 10px rgba(255, 255, 255, 0.1);
-  }
+ 
 
   @media screen and (min-width: $tablet) {
     width: 590px;
     font-size: 18px;
     line-height: 1.11;
   }
+  @media screen and (min-width: $desktop) {
+    height: 24px;
+  }
+  
 }
-.form__textarea {
+
+.form__textarea { 
   display: flex;
   flex-direction: column;
   max-width: 100%;
@@ -572,12 +547,12 @@ img {
 }
 .form__name {
   margin-bottom: 4px;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.11;
-  color: #CDCDCD;;
+  color: #cdcdcd;
 }
 textarea {
   padding-top: 12px;
@@ -587,7 +562,7 @@ textarea {
   resize: none;
   min-width: 287px;
   height: 95px;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -601,8 +576,7 @@ textarea {
 
   &:hover,
   &:focus {
-    box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.5),
-      0px 4px 10px rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.5), 0px 4px 10px rgba(255, 255, 255, 0.1);
   }
 
   @media screen and (min-width: $tablet) {
@@ -625,14 +599,13 @@ textarea:focus {
   gap: 16px;
   margin-bottom: 48px;
 
-  @media screen and (min-width: $tablet){
+  @media screen and (min-width: $tablet) {
     margin-bottom: 120px;
   }
 
   @media screen and (min-width: $desktop) {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-    }
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
 }
-
