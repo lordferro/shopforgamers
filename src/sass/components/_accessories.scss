@@ -422,6 +422,9 @@
     .line__desk {
       display: none;
     }
+    .line__mob {
+      display: block;
+    }
   }
 
   @media screen and (min-width: 480px) and (max-width: 767.9px) {
@@ -441,6 +444,9 @@
     .line__320 {
       display: none;
     }
+    .line__tab {
+      display: block;
+    }
   }
 
   @media screen and (min-width: 1280px) {
@@ -450,6 +456,9 @@
     .line__tab,
     .line__320 {
       display: none;
+    }
+    .line__desk {
+      display: block;
     }
   }
 }
