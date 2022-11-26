@@ -451,11 +451,9 @@ img {
   border-bottom: 1px solid #86e543;
   background-color: #01383a;
 
-  &:hover,
-  &:focus {
-    border-bottom: 1px solid #86e543;
-    box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.5),
-      0px 4px 10px rgba(255, 255, 255, 0.1);
+  &:hover
+   {
+    background-color: #17573D;
   }
 }
 .form__field input::placeholder {
@@ -493,11 +491,9 @@ img {
     height: 25px;
   }
 
-  &:hover,
-  &:focus {
-    border-bottom: 1px solid #86e543;
-    box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.5),
-      0px 4px 10px rgba(255, 255, 255, 0.1);
+  &:hover
+   {
+    background-color: #17573D;
   }
 
   @media screen and (min-width: 1px) {
@@ -533,11 +529,9 @@ img {
     height: 24px;
   }
 
-  &:hover,
-  &:focus {
-    border-bottom: 1px solid #86e543;
-    box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.5),
-      0px 4px 10px rgba(255, 255, 255, 0.1);
+  &:hover
+   {
+    background-color: #17573D;;
   }
 
   @media screen and (min-width: $tablet) {
