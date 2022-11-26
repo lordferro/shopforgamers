@@ -1,3 +1,1 @@
 import './js/contacts-modal';
-
-
