@@ -88,19 +88,20 @@
 }
 
 .line {
-  @media screen and (max-width: 479.9px) {
+  @media screen and (max-width: 480px) {
     margin-bottom: 24px;
     background-size: cover;
+
+    .line__mob,
     .line__tab,
     .line__desk {
       display: none;
     }
-    .line__mob {
-      display: block;
-    }
   }
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 480px) and (max-width: 768px) {
+
+    // margin-bottom: 24px;
     .line__tab,
     .line__desk,
     .line__320 {
@@ -108,25 +109,23 @@
     }
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1280px) {
+
+    // margin-bottom: 24px;
     .line__mob,
     .line__desk,
     .line__320 {
       display: none;
-    }
-    .line__tab {
-      display: block;
     }
   }
 
   @media screen and (min-width: 1280px) {
+
+    // margin-bottom: 16px;
     .line__mob,
     .line__tab,
     .line__320 {
       display: none;
-    }
-    .line__desk {
-      display: block;
     }
   }
 }
