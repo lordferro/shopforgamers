@@ -362,6 +362,16 @@ img {
   display: flex;
 }
 
+.contact-flex {
+  margin-left: auto;
+  @media screen and (min-width: $tablet) {
+   margin-left: 48px;
+  }
+   @media screen and (min-width: $desktop) {
+   margin-left: 0;
+  }
+}
+
 .form__container {
   display: flex;
   flex-wrap: wrap;
@@ -412,14 +422,6 @@ img {
 .form__field {
   max-width: 100%;
   margin-bottom: 10px;
-  @media screen and (min-width: $mobile) {
-      display: flex;
-      justify-content: center;
-    }
-  @media screen and (min-width: $tablet) {
-    display: flex;
-    justify-content: center;
-  }
 }
 .form__item {
   margin-bottom: 44px;
