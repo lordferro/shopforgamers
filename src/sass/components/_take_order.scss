@@ -1,3 +1,6 @@
+.container__take-order{
+  padding: 0 40px;
+}
 .order {
   background-color: $header-background-color;
   position: relative;
@@ -60,10 +63,10 @@
   }
 }
 
-.lineGuide {
+.line-Guide  {
   display: block;
     max-height: 27px;
-    margin-bottom:48px;
+    margin-bottom: 40px;
     @media screen and (max-width: 479px) {
         margin-bottom: 24px;
         .line__mob,
@@ -389,7 +392,6 @@ img {
 
   @media screen and (min-width: $desktop) {
     display: flex;
-    justify-content: center;
   }
 }
 
@@ -619,6 +621,11 @@ textarea:focus {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  margin-bottom: 48px;
+
+  @media screen and (min-width: $tablet){
+    margin-bottom: 120px;
+  }
 
   @media screen and (min-width: $desktop) {
       display: flex;
@@ -627,27 +634,3 @@ textarea:focus {
     }
 }
 
-
-.button {
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-
-  @media screen and (min-width: $mobile) {
-  }
-
-  @media screen and (min-width: $tablet) {
-  }
-
-  @media screen and (min-width: $desktop) {
-    margin: 0;
-  }
-}
-
-.button:last-child {
-  margin-bottom: 48px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
