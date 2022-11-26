@@ -402,10 +402,13 @@
 .line-accessories {
   @media screen and (max-width: 479.9px) {
     margin-bottom: 16px;
-    .line__mob,
+    .line__320,
     .line__tab,
     .line__desk {
       display: none;
+    }
+    .line__mob {
+      display: block;
     }
   }
 
@@ -426,6 +429,9 @@
     .line__320 {
       display: none;
     }
+    .line__tab {
+      display: block;
+    }
   }
 
   @media screen and (min-width: 1280px) {
@@ -435,6 +441,9 @@
     .line__tab,
     .line__320 {
       display: none;
+    }
+    .line__desk {
+      display: block;
     }
   }
 }
