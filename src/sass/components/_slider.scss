@@ -1,0 +1,297 @@
+body {
+  background-color: #01383a;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.section.slide {
+  @media screen and (max-width: 768px) {
+    padding-bottom: 48px;
+  }
+
+  @media screen and (min-width: 767.9px) {
+    padding-top: 120px;
+  }
+}
+
+.slides .slides__container {
+  /*анимация пролистывания изображений*/
+  transition: all 800ms cubic-bezier(0.77, 0, 0.175, 1);
+  /*устанавливает общий размер блока с изображениями*/
+  width: 500%;
+  line-height: 0;
+}
+
+/*____________________________________Зображення на всю ширину екрану________________________________*/
+
+// #desktop:checked ~ #slider {
+//   margin: 0 auto;
+
+//   /*размер всего слайдера*/
+//   width: 100vw; /*максимальнная длинна*/
+// }
+
+// article img {
+//   /*размер изображений слайдера*/
+//   width: 100%;
+//   max-height: 498px;
+
+//   @media screen and (min-width: 1280px) {
+//     max-height: 507px;
+//   }
+// }
+
+/*____________________________________Зображення на адаптивку________________________________*/
+
+#desktop:checked ~ #slider {
+  margin: 0 auto;
+  width: 100vw;
+
+  @media screen and (min-width: 480px) {
+    width: 321px;
+  }
+  @media screen and (min-width: 767.9px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1279.9px) {
+    width: 1280px;
+  }
+}
+
+article img {
+  width: 100%;
+  max-height: 498px;
+
+  @media screen and (min-width: 1279.9px) {
+    max-height: 507px;
+  }
+}
+
+.overflow {
+  /*сркывает все, что находится за пределами этого блока*/
+  width: 100%;
+  overflow: hidden;
+}
+
+#slider {
+  /*положение слайдера*/
+  position: relative;
+  text-align: center;
+}
+
+#slider {
+  /*центровка слайдера*/
+  margin: 0 auto;
+}
+
+.slides article {
+  /*все изображения справа друг от доруга*/
+  width: 20%;
+  float: left;
+}
+
+label {
+  /*при наведении на переключатели - курсор изменится*/
+  cursor: pointer;
+}
+
+.slide input {
+  /*скрывает стандартные инпуты (чекбоксы) на странице*/
+  display: none;
+}
+
+/*позиция изображения при активации переключателя*/
+#switch1:checked ~ .slides .slides__container {
+  margin-left: 0;
+}
+
+#switch2:checked ~ .slides .slides__container {
+  margin-left: -100%;
+}
+
+#switch3:checked ~ .slides .slides__container {
+  margin-left: -200%;
+}
+
+.active-point label {
+  /*стиль отдельного переключателя*/
+  border-radius: 50%; /*скругление углов*/
+  display: inline-block; /*расположение в строку*/
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  margin-left: 16px;
+}
+
+.active-point {
+  /*расположение блока с переключателями*/
+  text-align: center;
+  margin-top: 24px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 32px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 23px;
+  }
+}
+
+// .active-point label:hover {
+//   /*поведение чекбокса при наведении*/
+//   width: 40px;
+//   border-radius: 30px;
+//   transition-duration: 250ms;
+//   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+// }
+
+/*цвет активного лейбла при активации чекбокса*/
+#switch1:checked ~ .active-point label:nth-child(1),
+#switch2:checked ~ .active-point label:nth-child(2),
+#switch3:checked ~ .active-point label:nth-child(3) {
+  width: 40px;
+  border-radius: 30px;
+}
+
+.slides__item {
+  position: relative;
+}
+
+.title-container {
+  position: absolute;
+  bottom: 0;
+  margin: 0 auto;
+  z-index: 5;
+  width: 100%;
+}
+
+.slide__title {
+  margin-left: 24px;
+  margin-bottom: 38px;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 24px;
+  line-height: calc(28px / 24px);
+  text-align: left;
+
+  @media screen and (min-width: 768px) {
+    margin-left: 41px;
+    margin-bottom: 14px;
+    font-size: 56px;
+    line-height: calc(66px / 56px);
+  }
+
+  @media screen and (min-width: 1279.9px) {
+    margin-left: 49px;
+    margin-bottom: 49px;
+  }
+}
+
+.slide__title.first {
+  width: 257px;
+  background: linear-gradient(
+    270deg,
+    #1edde0 13.26%,
+    #8bda41 51.01%,
+    #ef001b 107.89%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+
+  @media screen and (min-width: 768px) {
+    width: 519px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 596px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.slide__title.second {
+  width: 229px;
+  background: linear-gradient(
+    270deg,
+    #03fe8f 23.82%,
+    #ebdcff 57.84%,
+    #ff98f3 102.62%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+
+  @media screen and (min-width: 768px) {
+    width: 526px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 530px;
+    background: linear-gradient(
+      270deg,
+      #03fe8f 4.61%,
+      #ebdcff 57.91%,
+      #ff98f3 92.2%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
+
+.word-upper {
+  text-transform: uppercase;
+}
+
+.slide__title.third {
+  width: 234px;
+  background: linear-gradient(
+    270deg,
+    #ffffff 27.78%,
+    #693cf9 61.11%,
+    #f475eb 102.56%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+
+  @media screen and (min-width: 768px) {
+    width: 551px;
+    background: linear-gradient(
+      270deg,
+      #ffffff 27.78%,
+      #693cf9 66.49%,
+      #f475eb 102.56%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 557px;
+    background: linear-gradient(
+      270deg,
+      #ffffff 13.26%,
+      #693cf9 60.87%,
+      #f475eb 107.89%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
