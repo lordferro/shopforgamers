@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
-    <link rel="stylesheet" href="./sass/index.scss" />
-    <link rel="shortcut icon" type="image/svg+xml" href="./images/lapyuk/icon_favicion_svg_1.svg" />
-    <script type="module" src="./index.js"></script>
-    <script type="module" src="./index2.js"></script>    
-  </head>
-  <body>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/header.html"></include>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Take order</title>
+  <link rel="stylesheet" href="./sass/index.scss" />
+  <link rel="shortcut icon" type="image/svg+xml" href="./images/lapyuk/icon_favicion_svg_1.svg" />
+  <script type="module" src="./index.js"></script>
+  <script type="module" src="./index2.js"></script>
+</head>
+
+<body>
+  <!-- ❗️❗️❗️ Add partials like so for every page -->
+  <include src="./partials/header.html"></include>
+  <main>
     <include src="./partials/take_order.html"></include>
-    <include src="./partials/footer.html"></include> 
-    <include src="./partials/modal_take_order.html"></include> 
-  </body>
+  </main>
+  <include src="./partials/footer.html"></include>
+  <!-- <include src="./partials/modal.html"></include>  -->
+</body>
+
 </html>
