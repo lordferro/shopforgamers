@@ -420,9 +420,36 @@ img {
   top: 10%;
   right: 0%;
 }
+
+.form__icon_2 {
+  display: none;
+  position: absolute;
+  top: 10%;
+  right: 0%;
+}
+
+.form__item {
+  &:hover,
+  &:focus {
+    .form__icon {
+      display: none;
+    }
+  }
+}
+
+.form__item {
+  &:hover,
+  &:focus {
+    .form__icon_2 {
+      display: block;
+    }
+  }
+}
+
 .form__item {
   position: relative;
   margin-bottom: 44px;
+  
   @media screen and (min-width: $desktop) {
     margin-bottom: 40px;
     height: 24px;
