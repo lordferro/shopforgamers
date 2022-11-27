@@ -104,6 +104,10 @@ margin-bottom: 20px;
 
 @media screen and (min-width: 480px) and (max-width: 767.9px) {
 margin-bottom: 20px;
+.line__mob {
+  display: block;
+}
+
 .line__tab,
 .line__desk,
 .line__320 {
@@ -116,6 +120,10 @@ right: 40px;
 width: calc(100% + 80px);
 margin-bottom: 40px;
 
+.line__tab {
+  display: block;
+}
+
 .line__mob,
 .line__desk,
 .line__320 {
@@ -127,6 +135,10 @@ margin-bottom: 40px;
 right: 40px;
 width: calc(100% + 80px);
 margin-bottom: 48px;
+
+.line__desk {
+  display: block;
+}
 
 .line__mob,
 .line__tab,
@@ -370,10 +382,10 @@ overflow: visible;
 }
 
 .point1 {
-animation: one 3s ease-in-out 1.5s infinite;
+animation: one 6s ease-in-out 6s infinite;
 }
 .point3 {
-animation: three 3s ease-in-out alternate 0.2s infinite;
+animation: three 6s ease-in-out alternate 3s infinite;
 }
 
 @keyframes one {
