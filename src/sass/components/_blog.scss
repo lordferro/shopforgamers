@@ -45,7 +45,6 @@
 .blog__container{
 position: relative;
 margin: 0 auto;
-padding-left: 16px;
 
 @media screen and (min-width: 480px){
 width: 480px;
@@ -71,6 +70,7 @@ font-weight: 500;
 font-size: 24px;
 line-height: 1.16;
 color: #FFFFFF;
+padding-left: 16px;
 //margin-bottom: 16px;
 
 
@@ -79,6 +79,7 @@ color: #FFFFFF;
   font-size: 56px;
   line-height: 1.17;
   margin-left: 59px;
+  padding-left: 0;
  // margin-bottom: 67px;
 }
 
