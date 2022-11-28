@@ -45,6 +45,7 @@
 .blog__container{
 position: relative;
 margin: 0 auto;
+padding-left: 16px;
 
 @media screen and (min-width: 480px){
 width: 480px;
@@ -198,11 +199,15 @@ position: relative;
   line-height: 1.16;
   color: #FFFFFF;
   margin-bottom: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
   
   @media screen and (min-width: 768px) {
     font-weight: 500;
     font-size: 56px;
     line-height: 1;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   @media screen and (min-width: 1280px) {
@@ -256,12 +261,12 @@ position: relative;
 
 .blog__info--text{
 
-  margin-left: 16px;
-  margin-right: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
 
   @media screen and (min-width: 768px) {
-  margin-left: 0;
-  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
   }
   
   @media screen and (min-width: 1280px){
@@ -327,8 +332,8 @@ position: relative;
   line-height: 1.18;
   color: #FFFFFF;
   margin-bottom: 8px;
-  margin-left: 16px;
-  margin-right: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
 
   @media screen and (min-width: 768px) {
     font-weight: 400;
