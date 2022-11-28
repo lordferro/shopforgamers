@@ -45,12 +45,12 @@
 .blog__container{
 position: relative;
 margin: 0 auto;
-padding-left: 16px;
-padding-right: 16px;
 
 @media screen and (min-width: 480px){
 width: 480px;
 margin: 0 auto;
+padding-left: 16px;
+padding-right: 16px;
 }
 
 @media screen and (min-width: 768px){
@@ -70,6 +70,7 @@ font-weight: 500;
 font-size: 24px;
 line-height: 1.16;
 color: #FFFFFF;
+padding-left: 16px;
 //margin-bottom: 16px;
 
 
@@ -78,6 +79,7 @@ color: #FFFFFF;
   font-size: 56px;
   line-height: 1.17;
   margin-left: 59px;
+  padding-left: 0;
  // margin-bottom: 67px;
 }
 
@@ -198,11 +200,15 @@ position: relative;
   line-height: 1.16;
   color: #FFFFFF;
   margin-bottom: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
   
   @media screen and (min-width: 768px) {
     font-weight: 500;
     font-size: 56px;
     line-height: 1;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   @media screen and (min-width: 1280px) {
@@ -212,7 +218,6 @@ position: relative;
 }
 
 .blog__image--mobile{
-width: calc(100% + 32px);
 
 @media screen and (min-width: 768px) {
   width: 387px;
@@ -226,9 +231,8 @@ width: calc(100% + 32px);
 
 .blog_cover{
   position: relative;
-  right: 16px;
   margin-bottom: 8px;
-  width: calc(100vw + 32px);
+  width: 100vw;
   
  
   @media screen and (min-width: 768px) {
@@ -257,14 +261,20 @@ width: calc(100% + 32px);
 }
 
 .blog__info--text{
+
+  padding-left: 16px;
+  padding-right: 16px;
+
+  @media screen and (min-width: 768px) {
+  padding-left: 0;
+  padding-right: 0;
+  }
   
   @media screen and (min-width: 1280px){
   display: flex;
   flex-direction:row;
   justify-content: space-between;
   width:100%;
-  margin-left: 0;
-  
   
   
 }
@@ -323,11 +333,15 @@ width: calc(100% + 32px);
   line-height: 1.18;
   color: #FFFFFF;
   margin-bottom: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
 
   @media screen and (min-width: 768px) {
     font-weight: 400;
     font-size: 24px;
     line-height: 1.16;
+    margin-left: 0;
+    margin-right: 0;
   }
 
     
@@ -348,6 +362,10 @@ width: calc(100% + 32px);
   &--desk{
      display: flex;
      align-items: flex-end;
+     margin-right: 16px;
+     @media screen and (min-width: 768px) {
+      margin-right: 0;
+     }
    
 }
 }
